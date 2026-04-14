@@ -17,6 +17,10 @@ export type ProviderAuth = {
   provider: UsageProviderId;
   token: string;
   accountId?: string;
+  /** Stable profile identifier when this auth came from a specific auth
+   * profile. Used to uniquify snapshots when one provider has multiple
+   * OAuth profiles. */
+  profileId?: string;
 };
 
 type AuthStore = ReturnType<typeof ensureAuthProfileStore>;
@@ -88,10 +92,10 @@ function resolveProviderApiKeyFromConfigAndStore(params: {
   return undefined;
 }
 
-async function resolveOAuthToken(params: {
+async function resolveOAuthTokens(params: {
   state: UsageAuthState;
   provider: string;
-}): Promise<ProviderAuth | null> {
+}): Promise<ProviderAuth[]> {
   const store = resolveUsageAuthStore(params.state);
   const order = resolveAuthProfileOrder({
     cfg: params.state.cfg,
@@ -100,6 +104,7 @@ async function resolveOAuthToken(params: {
   });
   const deduped = dedupeProfileIds(order);
 
+  const out: ProviderAuth[] = [];
   for (const profileId of deduped) {
     const cred = store.profiles[profileId];
     if (!cred || (cred.type !== "oauth" && cred.type !== "token")) {
@@ -117,20 +122,29 @@ async function resolveOAuthToken(params: {
       if (!resolved) {
         continue;
       }
-      return {
+      out.push({
         provider: params.provider as UsageProviderId,
         token: resolved.apiKey,
+        profileId,
         accountId:
           cred.type === "oauth" && "accountId" in cred
             ? (cred as { accountId?: string }).accountId
             : undefined,
-      };
+      });
     } catch {
       // ignore
     }
   }
 
-  return null;
+  return out;
+}
+
+async function resolveOAuthToken(params: {
+  state: UsageAuthState;
+  provider: string;
+}): Promise<ProviderAuth | null> {
+  const all = await resolveOAuthTokens(params);
+  return all[0] ?? null;
 }
 
 async function resolveProviderUsageAuthViaPlugin(params: {
@@ -221,6 +235,15 @@ export async function resolveProviderAuths(params: {
   const auths: ProviderAuth[] = [];
 
   for (const provider of params.providers) {
+    // Multi-profile path: expand every OAuth profile registered for this
+    // provider into its own auth entry so downstream usage snapshots are
+    // reported per account instead of collapsing onto the first profile.
+    const oauthAll = await resolveOAuthTokens({ state, provider });
+    if (oauthAll.length > 0) {
+      auths.push(...oauthAll);
+      continue;
+    }
+
     const pluginAuth = await resolveProviderUsageAuthViaPlugin({
       state,
       provider,

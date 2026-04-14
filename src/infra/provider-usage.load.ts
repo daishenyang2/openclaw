@@ -101,8 +101,8 @@ export async function loadProviderUsageSummary(
     return { updatedAt: now, providers: [] };
   }
 
-  const tasks = auths.map((auth) =>
-    withTimeout(
+  const tasks = auths.map(async (auth) => {
+    const snapshot = await withTimeout(
       fetchProviderUsageSnapshot({
         auth,
         config,
@@ -119,8 +119,16 @@ export async function loadProviderUsageSummary(
         windows: [],
         error: "Timeout",
       },
-    ),
-  );
+    );
+    // Propagate profile/account metadata so downstream clients can render
+    // one usage entry per (provider, profile) pair when a provider has
+    // multiple OAuth profiles configured.
+    return {
+      ...snapshot,
+      ...(auth.profileId ? { profileId: auth.profileId } : {}),
+      ...(auth.accountId ? { accountId: auth.accountId } : {}),
+    };
+  });
 
   const snapshots = await Promise.all(tasks);
   const providers = snapshots.filter((entry) => {

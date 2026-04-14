@@ -12,6 +12,11 @@ struct GatewayUsageProvider: Codable {
     let windows: [GatewayUsageWindow]
     let plan: String?
     let error: String?
+    /// Optional auth profile id (e.g. `openai-codex:daishenyang`) used to
+    /// disambiguate multiple OAuth profiles under the same provider.
+    let profileId: String?
+    /// Optional human-readable account identifier (e.g. email) for display.
+    let accountId: String?
 }
 
 struct GatewayUsageSummary: Codable {
@@ -24,6 +29,7 @@ struct UsageRow: Identifiable {
     let providerId: String
     let displayName: String
     let plan: String?
+    let accountId: String?
     let windowLabel: String?
     let usedPercent: Double?
     let resetAt: Date?
@@ -35,8 +41,10 @@ struct UsageRow: Identifiable {
     }
 
     var titleText: String {
-        if let plan, !plan.isEmpty { return "\(self.displayName) (\(plan))" }
-        return self.displayName
+        var base = self.displayName
+        if let plan, !plan.isEmpty { base += " (\(plan))" }
+        if let accountId, !accountId.isEmpty { base += " · \(accountId)" }
+        return base
     }
 
     var remainingPercent: Int? {
@@ -74,13 +82,19 @@ struct UsageRow: Identifiable {
 extension GatewayUsageSummary {
     func primaryRows() -> [UsageRow] {
         self.providers.flatMap { provider -> [UsageRow] in
+            let accountKey = provider.profileId ?? provider.accountId ?? ""
+            let uniqueKey = accountKey.isEmpty
+                ? provider.provider
+                : "\(provider.provider)#\(accountKey)"
+
             if provider.windows.isEmpty {
                 return [
                     UsageRow(
-                        id: provider.provider,
+                        id: uniqueKey,
                         providerId: provider.provider,
                         displayName: provider.displayName,
                         plan: provider.plan,
+                        accountId: provider.accountId,
                         windowLabel: nil,
                         usedPercent: nil,
                         resetAt: nil,
@@ -89,10 +103,11 @@ extension GatewayUsageSummary {
             }
             return provider.windows.map { window in
                 UsageRow(
-                    id: "\(provider.provider)-\(window.label)",
+                    id: "\(uniqueKey)-\(window.label)",
                     providerId: provider.provider,
                     displayName: provider.displayName,
                     plan: provider.plan,
+                    accountId: provider.accountId,
                     windowLabel: window.label,
                     usedPercent: window.usedPercent,
                     resetAt: window.resetAt.map { Date(timeIntervalSince1970: $0 / 1000) },
