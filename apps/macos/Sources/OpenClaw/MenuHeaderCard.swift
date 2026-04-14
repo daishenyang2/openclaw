@@ -1,14 +1,14 @@
 import SwiftUI
 
 struct MenuHeaderCard<Content: View>: View {
-    let title: String
+    let title: LocalizedStringKey?
     let subtitle: String
     let statusText: String?
     let paddingBottom: CGFloat
     @ViewBuilder var content: Content
 
     init(
-        title: String,
+        title: LocalizedStringKey?,
         subtitle: String,
         statusText: String? = nil,
         paddingBottom: CGFloat = 6,
@@ -24,10 +24,12 @@ struct MenuHeaderCard<Content: View>: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 6) {
             HStack(alignment: .firstTextBaseline) {
-                Text(self.title)
-                    .font(.caption.weight(.semibold))
-                    .foregroundStyle(.secondary)
-                Spacer(minLength: 10)
+                if let title {
+                    Text(title)
+                        .font(.caption.weight(.semibold))
+                        .foregroundStyle(.secondary)
+                    Spacer(minLength: 10)
+                }
                 Text(self.subtitle)
                     .font(.caption)
                     .foregroundStyle(.secondary)

@@ -707,7 +707,7 @@ struct DebugSettings: View {
 
     private func chooseCatalogFile() {
         let panel = NSOpenPanel()
-        panel.title = "Select models.generated.ts"
+        panel.title = String(localized: "Select models.generated.ts")
         let tsType = UTType(filenameExtension: "ts")
             ?? UTType(tag: "ts", tagClass: .filenameExtension, conformingTo: .sourceCode)
             ?? .item

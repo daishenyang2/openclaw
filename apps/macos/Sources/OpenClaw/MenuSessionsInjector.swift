@@ -172,104 +172,13 @@ extension MenuSessionsInjector {
 
         guard let insertIndex = self.findInsertIndex(in: menu) else { return }
         let width = self.initialWidth(for: menu)
-        let isConnected = self.isControlChannelConnected
-        let channelState = ControlChannel.shared.state
 
         var cursor = insertIndex
-        var headerView: NSView?
 
-        if let snapshot = self.cachedSnapshot {
-            let now = Date()
-            let mainKey = self.mainSessionKey
-            let rows = snapshot.rows.filter { row in
-                if row.key == "main", mainKey != "main" { return false }
-                if row.key == mainKey { return true }
-                guard let updatedAt = row.updatedAt else { return false }
-                return now.timeIntervalSince(updatedAt) <= self.activeWindowSeconds
-            }.sorted { lhs, rhs in
-                if lhs.key == mainKey { return true }
-                if rhs.key == mainKey { return false }
-                return (lhs.updatedAt ?? .distantPast) > (rhs.updatedAt ?? .distantPast)
-            }
-            if !rows.isEmpty {
-                let previewKeys = rows.prefix(20).map(\.key)
-                let task = Task {
-                    await SessionMenuPreviewLoader.prewarm(sessionKeys: previewKeys, maxItems: 10)
-                }
-                self.previewTasks.append(task)
-            }
-
-            let headerItem = NSMenuItem()
-            headerItem.tag = self.tag
-            headerItem.isEnabled = false
-            let statusText = self
-                .cachedErrorText ?? (isConnected ? nil : self.controlChannelStatusText(for: channelState))
-            let hosted = self.makeHostedView(
-                rootView: AnyView(MenuSessionsHeaderView(
-                    count: rows.count,
-                    statusText: statusText)),
-                width: width,
-                highlighted: false)
-            headerItem.view = hosted
-            headerView = hosted
-            menu.insertItem(headerItem, at: cursor)
-            cursor += 1
-
-            if rows.isEmpty {
-                menu.insertItem(
-                    self.makeMessageItem(text: "No active sessions", symbolName: "minus", width: width),
-                    at: cursor)
-                cursor += 1
-            } else {
-                for row in rows {
-                    let item = NSMenuItem()
-                    item.tag = self.tag
-                    item.isEnabled = true
-                    item.submenu = self.buildSubmenu(for: row, storePath: snapshot.storePath)
-                    item.view = self.makeHostedView(
-                        rootView: AnyView(SessionMenuLabelView(row: row, width: width)),
-                        width: width,
-                        highlighted: true)
-                    menu.insertItem(item, at: cursor)
-                    cursor += 1
-                }
-            }
-        } else {
-            let headerItem = NSMenuItem()
-            headerItem.tag = self.tag
-            headerItem.isEnabled = false
-            let statusText = isConnected
-                ? (self.cachedErrorText ?? "Loading sessions…")
-                : self.controlChannelStatusText(for: channelState)
-            let hosted = self.makeHostedView(
-                rootView: AnyView(MenuSessionsHeaderView(
-                    count: 0,
-                    statusText: statusText)),
-                width: width,
-                highlighted: false)
-            headerItem.view = hosted
-            headerView = hosted
-            menu.insertItem(headerItem, at: cursor)
-            cursor += 1
-
-            if !isConnected {
-                menu.insertItem(
-                    self.makeMessageItem(
-                        text: "Connect the gateway to see sessions",
-                        symbolName: "bolt.slash",
-                        width: width),
-                    at: cursor)
-                cursor += 1
-            }
-        }
-
+        // Sessions list intentionally hidden from menu bar; keep usage sections.
         cursor = self.insertUsageSection(into: menu, at: cursor, width: width)
         cursor = self.insertCostUsageSection(into: menu, at: cursor, width: width)
-
-        DispatchQueue.main.async { [weak self, weak headerView] in
-            guard let self, let headerView else { return }
-            self.captureMenuWidthIfAvailable(from: headerView)
-        }
+        _ = cursor
     }
 
     private func injectNodes(into menu: NSMenu) {
@@ -334,7 +243,7 @@ extension MenuSessionsInjector {
             if entries.count > 8 {
                 let moreItem = NSMenuItem()
                 moreItem.tag = self.nodesTag
-                moreItem.title = "More Devices..."
+                moreItem.title = String(localized: "More Devices...")
                 moreItem.image = NSImage(systemSymbolName: "ellipsis.circle", accessibilityDescription: nil)
                 let overflow = Array(entries.dropFirst(8))
                 moreItem.submenu = self.buildNodesOverflowMenu(entries: overflow, width: width)
@@ -372,28 +281,6 @@ extension MenuSessionsInjector {
         menu.insertItem(headerItem, at: cursor)
         cursor += 1
 
-        if let selectedProvider = self.selectedUsageProviderId,
-           let primary = rows.first(where: { $0.providerId.lowercased() == selectedProvider }),
-           rows.count > 1
-        {
-            let others = rows.filter { $0.providerId.lowercased() != selectedProvider }
-
-            let item = NSMenuItem()
-            item.tag = self.tag
-            item.isEnabled = true
-            if !others.isEmpty {
-                item.submenu = self.buildUsageOverflowMenu(rows: others, width: width)
-            }
-            item.view = self.makeHostedView(
-                rootView: AnyView(UsageMenuLabelView(row: primary, width: width, showsChevron: !others.isEmpty)),
-                width: width,
-                highlighted: true)
-            menu.insertItem(item, at: cursor)
-            cursor += 1
-
-            return cursor
-        }
-
         for row in rows {
             let item = NSMenuItem()
             item.tag = self.tag
@@ -421,7 +308,7 @@ extension MenuSessionsInjector {
             cursor += 1
         }
 
-        let item = NSMenuItem(title: "Usage cost (30 days)", action: nil, keyEquivalent: "")
+        let item = NSMenuItem(title: String(localized: "Usage cost (30 days)"), action: nil, keyEquivalent: "")
         item.tag = self.tag
         item.isEnabled = true
         item.image = NSImage(systemSymbolName: "chart.bar.xaxis", accessibilityDescription: nil)
@@ -774,17 +661,17 @@ extension MenuSessionsInjector {
             width: width,
             maxLines: 3))
 
-        let morePreview = NSMenuItem(title: "More preview…", action: nil, keyEquivalent: "")
+        let morePreview = NSMenuItem(title: String(localized: "More preview…"), action: nil, keyEquivalent: "")
         morePreview.submenu = self.buildPreviewSubmenu(sessionKey: row.key, width: width)
         menu.addItem(morePreview)
 
         menu.addItem(NSMenuItem.separator())
 
-        let thinking = NSMenuItem(title: "Thinking", action: nil, keyEquivalent: "")
+        let thinking = NSMenuItem(title: String(localized: "Thinking"), action: nil, keyEquivalent: "")
         thinking.submenu = self.buildThinkingMenu(for: row)
         menu.addItem(thinking)
 
-        let verbose = NSMenuItem(title: "Verbose", action: nil, keyEquivalent: "")
+        let verbose = NSMenuItem(title: String(localized: "Verbose"), action: nil, keyEquivalent: "")
         verbose.submenu = self.buildVerboseMenu(for: row)
         menu.addItem(verbose)
 
@@ -795,7 +682,7 @@ extension MenuSessionsInjector {
         {
             menu.addItem(NSMenuItem.separator())
             let openLog = NSMenuItem(
-                title: "Open Session Log",
+                title: String(localized: "Open Session Log"),
                 action: #selector(self.openSessionLog(_:)),
                 keyEquivalent: "")
             openLog.target = self
@@ -808,13 +695,13 @@ extension MenuSessionsInjector {
 
         menu.addItem(NSMenuItem.separator())
 
-        let reset = NSMenuItem(title: "Reset Session", action: #selector(self.resetSession(_:)), keyEquivalent: "")
+        let reset = NSMenuItem(title: String(localized: "Reset Session"), action: #selector(self.resetSession(_:)), keyEquivalent: "")
         reset.target = self
         reset.representedObject = row.key
         menu.addItem(reset)
 
         let compact = NSMenuItem(
-            title: "Compact Session Log",
+            title: String(localized: "Compact Session Log"),
             action: #selector(self.compactSession(_:)),
             keyEquivalent: "")
         compact.target = self
@@ -822,7 +709,7 @@ extension MenuSessionsInjector {
         menu.addItem(compact)
 
         if row.key != self.mainSessionKey, row.key != "global" {
-            let del = NSMenuItem(title: "Delete Session", action: #selector(self.deleteSession(_:)), keyEquivalent: "")
+            let del = NSMenuItem(title: String(localized: "Delete Session"), action: #selector(self.deleteSession(_:)), keyEquivalent: "")
             del.target = self
             del.representedObject = row.key
             del.isAlternate = false

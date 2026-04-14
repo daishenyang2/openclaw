@@ -232,7 +232,7 @@ struct PermissionRow: View {
         self.compact ? 28 : 32
     }
 
-    private var title: String {
+    private var title: LocalizedStringKey {
         switch self.capability {
         case .appleScript: "Automation (AppleScript)"
         case .notifications: "Notifications"
@@ -245,7 +245,7 @@ struct PermissionRow: View {
         }
     }
 
-    private var subtitle: String {
+    private var subtitle: LocalizedStringKey {
         switch self.capability {
         case .appleScript:
             "Control other apps (e.g. Terminal) for automation actions"

@@ -278,7 +278,7 @@ final class NodePairingApprovalPrompter {
         PairingAlertSupport.presentPairingAlert(
             request: req,
             requestId: req.requestId,
-            messageText: "Allow node to connect?",
+            messageText: String(localized: "Allow node to connect?"),
             informativeText: Self.describe(req),
             state: self.alertState,
             onResponse: self.handleAlertResponse)

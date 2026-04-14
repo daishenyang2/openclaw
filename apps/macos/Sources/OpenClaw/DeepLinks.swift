@@ -182,8 +182,8 @@ final class DeepLinkHandler {
         let alert = NSAlert()
         alert.messageText = title
         alert.informativeText = message
-        alert.addButton(withTitle: "Run")
-        alert.addButton(withTitle: "Cancel")
+        alert.addButton(withTitle: String(localized: "Run"))
+        alert.addButton(withTitle: String(localized: "Cancel"))
         alert.alertStyle = .warning
         return alert.runModal() == .alertFirstButtonReturn
     }
@@ -192,7 +192,7 @@ final class DeepLinkHandler {
         let alert = NSAlert()
         alert.messageText = title
         alert.informativeText = message
-        alert.addButton(withTitle: "OK")
+        alert.addButton(withTitle: String(localized: "OK"))
         alert.alertStyle = .informational
         alert.runModal()
     }

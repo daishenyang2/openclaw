@@ -345,7 +345,7 @@ struct MenuContent: View {
             NSWorkspace.shared.open(url)
         } catch {
             let alert = NSAlert()
-            alert.messageText = "Dashboard unavailable"
+            alert.messageText = String(localized: "Dashboard unavailable")
             alert.informativeText = error.localizedDescription
             alert.runModal()
         }

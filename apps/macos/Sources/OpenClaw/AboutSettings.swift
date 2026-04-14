@@ -150,7 +150,7 @@ struct AboutSettings: View {
 @MainActor
 private struct AboutLinkRow: View {
     let icon: String
-    let title: String
+    let title: LocalizedStringKey
     let url: String
 
     @State private var hovering = false

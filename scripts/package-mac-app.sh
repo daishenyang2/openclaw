@@ -257,6 +257,19 @@ else
   exit 1
 fi
 
+echo "🌐 Compiling localization catalogs (.xcstrings → .lproj)"
+LOCALIZE_SRC_DIR="$ROOT_DIR/apps/macos/Sources/OpenClaw/Resources"
+if command -v xcrun >/dev/null 2>&1; then
+  for xcstrings_file in "$LOCALIZE_SRC_DIR"/Localizable.xcstrings "$LOCALIZE_SRC_DIR"/InfoPlist.xcstrings; do
+    [ -f "$xcstrings_file" ] || continue
+    if ! xcrun xcstringstool compile "$xcstrings_file" -o "$APP_ROOT/Contents/Resources" 2>&1; then
+      echo "WARN: xcstringstool failed for $xcstrings_file (continuing)" >&2
+    fi
+  done
+else
+  echo "WARN: xcrun not available; skipping xcstrings compile (localization disabled)" >&2
+fi
+
 echo "📦 Copying OpenClawKit resources"
 OPENCLAWKIT_BUNDLE="$(build_path_for_arch "$PRIMARY_ARCH")/$BUILD_CONFIG/OpenClawKit_OpenClawKit.bundle"
 if [ -d "$OPENCLAWKIT_BUNDLE" ]; then

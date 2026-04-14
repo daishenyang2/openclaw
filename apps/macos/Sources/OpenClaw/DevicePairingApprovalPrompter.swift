@@ -115,7 +115,7 @@ final class DevicePairingApprovalPrompter {
         PairingAlertSupport.presentPairingAlert(
             request: req,
             requestId: req.requestId,
-            messageText: "Allow device to connect?",
+            messageText: String(localized: "Allow device to connect?"),
             informativeText: Self.describe(req),
             state: self.alertState,
             onResponse: self.handleAlertResponse)

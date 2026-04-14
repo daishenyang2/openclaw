@@ -231,13 +231,13 @@ enum ExecApprovalsPromptPresenter {
         NSApp.activate(ignoringOtherApps: true)
         let alert = NSAlert()
         alert.alertStyle = .warning
-        alert.messageText = "Allow this command?"
-        alert.informativeText = "Review the command details before allowing."
+        alert.messageText = String(localized: "Allow this command?")
+        alert.informativeText = String(localized: "Review the command details before allowing.")
         alert.accessoryView = self.buildAccessoryView(request)
 
-        alert.addButton(withTitle: "Allow Once")
-        alert.addButton(withTitle: "Always Allow")
-        alert.addButton(withTitle: "Don't Allow")
+        alert.addButton(withTitle: String(localized: "Allow Once"))
+        alert.addButton(withTitle: String(localized: "Always Allow"))
+        alert.addButton(withTitle: String(localized: "Don't Allow"))
         if #available(macOS 11.0, *), alert.buttons.indices.contains(2) {
             alert.buttons[2].hasDestructiveAction = true
         }

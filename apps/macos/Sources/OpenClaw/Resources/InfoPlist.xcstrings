@@ -1,0 +1,126 @@
+{
+  "sourceLanguage" : "en",
+  "version" : "1.0",
+  "strings" : {
+    "NSAppleEventsUsageDescription" : {
+      "comment" : "Usage description for AppleEvents / Automation.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "OpenClaw needs Automation (AppleScript) permission to drive Terminal and other apps for agent actions." }
+        },
+        "zh-Hans" : {
+          "stringUnit" : { "state" : "translated", "value" : "OpenClaw 需要自动化（AppleScript）权限，以便助手驱动终端等其他应用。" }
+        }
+      }
+    },
+    "NSCameraUsageDescription" : {
+      "comment" : "Usage description for Camera.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "OpenClaw can capture photos or short video clips when requested by the agent." }
+        },
+        "zh-Hans" : {
+          "stringUnit" : { "state" : "translated", "value" : "OpenClaw 在助手请求时可以拍照或录制短视频。" }
+        }
+      }
+    },
+    "NSLocationAlwaysAndWhenInUseUsageDescription" : {
+      "comment" : "Usage description for Location (always).",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "OpenClaw can share your location when requested by the agent." }
+        },
+        "zh-Hans" : {
+          "stringUnit" : { "state" : "translated", "value" : "OpenClaw 在助手请求时可以分享您的位置信息。" }
+        }
+      }
+    },
+    "NSLocationUsageDescription" : {
+      "comment" : "Usage description for Location (legacy).",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "OpenClaw can share your location when requested by the agent." }
+        },
+        "zh-Hans" : {
+          "stringUnit" : { "state" : "translated", "value" : "OpenClaw 在助手请求时可以分享您的位置信息。" }
+        }
+      }
+    },
+    "NSLocationWhenInUseUsageDescription" : {
+      "comment" : "Usage description for Location (when in use).",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "OpenClaw can share your location when requested by the agent." }
+        },
+        "zh-Hans" : {
+          "stringUnit" : { "state" : "translated", "value" : "OpenClaw 在助手请求时可以分享您的位置信息。" }
+        }
+      }
+    },
+    "NSMicrophoneUsageDescription" : {
+      "comment" : "Usage description for Microphone.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "OpenClaw needs the mic for Voice Wake tests and agent audio capture." }
+        },
+        "zh-Hans" : {
+          "stringUnit" : { "state" : "translated", "value" : "OpenClaw 需要麦克风权限用于语音唤醒测试和助手音频采集。" }
+        }
+      }
+    },
+    "NSRemindersUsageDescription" : {
+      "comment" : "Usage description for Reminders.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "OpenClaw can access Reminders when requested by the agent for the apple-reminders skill." }
+        },
+        "zh-Hans" : {
+          "stringUnit" : { "state" : "translated", "value" : "OpenClaw 在助手使用 apple-reminders 技能时可以访问提醒事项。" }
+        }
+      }
+    },
+    "NSScreenCaptureDescription" : {
+      "comment" : "Usage description for Screen Recording.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "OpenClaw captures the screen when the agent needs screenshots for context." }
+        },
+        "zh-Hans" : {
+          "stringUnit" : { "state" : "translated", "value" : "OpenClaw 在助手需要截图作为上下文时会捕捉屏幕内容。" }
+        }
+      }
+    },
+    "NSSpeechRecognitionUsageDescription" : {
+      "comment" : "Usage description for Speech Recognition.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "OpenClaw uses speech recognition to detect your Voice Wake trigger phrase." }
+        },
+        "zh-Hans" : {
+          "stringUnit" : { "state" : "translated", "value" : "OpenClaw 使用语音识别来检测您的语音唤醒触发短语。" }
+        }
+      }
+    },
+    "NSUserNotificationUsageDescription" : {
+      "comment" : "Usage description for User Notifications.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "OpenClaw needs notification permission to show alerts for agent actions." }
+        },
+        "zh-Hans" : {
+          "stringUnit" : { "state" : "translated", "value" : "OpenClaw 需要通知权限以便在助手执行操作时显示提醒。" }
+        }
+      }
+    }
+  }
+}

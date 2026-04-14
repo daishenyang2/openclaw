@@ -15,11 +15,11 @@ final class CLIInstallPrompter {
         UserDefaults.standard.set(version, forKey: cliInstallPromptedVersionKey)
 
         let alert = NSAlert()
-        alert.messageText = "Install OpenClaw CLI?"
-        alert.informativeText = "Local mode needs the CLI so launchd can run the gateway."
-        alert.addButton(withTitle: "Install CLI")
-        alert.addButton(withTitle: "Not now")
-        alert.addButton(withTitle: "Open Settings")
+        alert.messageText = String(localized: "Install OpenClaw CLI?")
+        alert.informativeText = String(localized: "Local mode needs the CLI so launchd can run the gateway.")
+        alert.addButton(withTitle: String(localized: "Install CLI"))
+        alert.addButton(withTitle: String(localized: "Not now"))
+        alert.addButton(withTitle: String(localized: "Open Settings"))
         let response = alert.runModal()
 
         switch response {
@@ -52,7 +52,7 @@ final class CLIInstallPrompter {
         }
         if let message = await status.get() {
             let alert = NSAlert()
-            alert.messageText = "CLI install finished"
+            alert.messageText = String(localized: "CLI install finished")
             alert.informativeText = message
             alert.runModal()
         }

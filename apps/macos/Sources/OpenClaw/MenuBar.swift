@@ -33,6 +33,7 @@ struct OpenClawApp: App {
 
     init() {
         OpenClawLogging.bootstrapIfNeeded()
+        LanguagePreferenceStore.bootstrap()
 
         Self.applyAttachOnlyOverrideIfNeeded()
         _state = State(initialValue: AppStateStore.shared)

@@ -76,9 +76,9 @@ enum PairingAlertSupport {
         alert.alertStyle = .warning
         alert.messageText = messageText
         alert.informativeText = informativeText
-        alert.addButton(withTitle: "Later")
-        alert.addButton(withTitle: "Approve")
-        alert.addButton(withTitle: "Reject")
+        alert.addButton(withTitle: String(localized: "Later"))
+        alert.addButton(withTitle: String(localized: "Approve"))
+        alert.addButton(withTitle: String(localized: "Reject"))
         if #available(macOS 11.0, *), alert.buttons.indices.contains(2) {
             alert.buttons[2].hasDestructiveAction = true
         }

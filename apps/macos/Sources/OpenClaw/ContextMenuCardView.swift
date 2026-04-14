@@ -20,7 +20,7 @@ struct ContextMenuCardView: View {
 
     var body: some View {
         MenuHeaderCard(
-            title: "Context",
+            title: nil,
             subtitle: self.subtitle,
             statusText: self.statusText,
             paddingBottom: 8)

@@ -5,10 +5,23 @@ struct MenuSessionsHeaderView: View {
     let statusText: String?
 
     var body: some View {
-        MenuHeaderCard(
-            title: "Context",
-            subtitle: self.subtitle,
-            statusText: self.statusText)
+        VStack(alignment: .leading, spacing: 4) {
+            Text(self.subtitle)
+                .font(.caption)
+                .foregroundStyle(.secondary)
+            if let statusText, !statusText.isEmpty {
+                Text(statusText)
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+                    .lineLimit(1)
+                    .truncationMode(.tail)
+            }
+        }
+        .padding(.top, 8)
+        .padding(.bottom, 6)
+        .padding(.leading, 20)
+        .padding(.trailing, 10)
+        .frame(minWidth: 300, maxWidth: .infinity, alignment: .leading)
     }
 
     private var subtitle: String {

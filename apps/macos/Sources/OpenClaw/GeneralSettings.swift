@@ -15,6 +15,8 @@ struct GeneralSettings: View {
     @State private var gatewayStatus: GatewayEnvironmentStatus = .checking
     @State private var remoteStatus: RemoteStatus = .idle
     @State private var showRemoteAdvanced = false
+    @State private var languageStore = LanguagePreferenceStore.shared
+    @State private var showLanguageRestartHint = false
     private let isPreview = ProcessInfo.processInfo.isPreview
     private var isNixMode: Bool {
         ProcessInfo.processInfo.isNixMode
@@ -71,6 +73,10 @@ struct GeneralSettings: View {
                         title: "Enable debug tools",
                         subtitle: "Show the Debug tab with development utilities.",
                         binding: self.$state.debugPaneEnabled)
+
+                    Divider()
+
+                    self.languageSection
                 }
 
                 Spacer(minLength: 12)
@@ -99,6 +105,47 @@ struct GeneralSettings: View {
         Binding(
             get: { !self.state.isPaused },
             set: { self.state.isPaused = !$0 })
+    }
+
+    private var languageSection: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Text("Language")
+                .font(.title3.weight(.semibold))
+                .frame(maxWidth: .infinity, alignment: .leading)
+
+            Picker("Language", selection: self.languageBinding) {
+                ForEach(LanguagePreference.allCases) { option in
+                    Text(option.displayName).tag(option)
+                }
+            }
+            .pickerStyle(.menu)
+            .labelsHidden()
+            .frame(width: 260, alignment: .leading)
+
+            if self.showLanguageRestartHint {
+                HStack(spacing: 10) {
+                    Text("Language change takes effect after the app restarts.")
+                        .font(.footnote)
+                        .foregroundStyle(.secondary)
+                        .fixedSize(horizontal: false, vertical: true)
+                    Button("Restart now") {
+                        self.languageStore.relaunchForLanguageChange()
+                    }
+                    .buttonStyle(.borderedProminent)
+                    .controlSize(.small)
+                }
+            }
+        }
+    }
+
+    private var languageBinding: Binding<LanguagePreference> {
+        Binding(
+            get: { self.languageStore.preference },
+            set: { newValue in
+                guard newValue != self.languageStore.preference else { return }
+                self.languageStore.preference = newValue
+                self.showLanguageRestartHint = true
+            })
     }
 
     private var connectionSection: some View {
@@ -587,13 +634,13 @@ extension GeneralSettings {
         }
 
         let alert = NSAlert()
-        alert.messageText = "Log file not found"
-        alert.informativeText = """
+        alert.messageText = String(localized: "Log file not found")
+        alert.informativeText = String(localized: """
         Looked for openclaw logs in /tmp/openclaw/.
         Run a health check or send a message to generate activity, then try again.
-        """
+        """)
         alert.alertStyle = .informational
-        alert.addButton(withTitle: "OK")
+        alert.addButton(withTitle: String(localized: "OK"))
         alert.runModal()
     }
 

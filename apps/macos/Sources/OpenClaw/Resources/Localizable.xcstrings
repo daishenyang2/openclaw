@@ -1,0 +1,6546 @@
+{
+  "sourceLanguage": "en",
+  "version": "1.0",
+  "strings": {
+    "%@ (System)": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@（系统）"
+          }
+        }
+      }
+    },
+    "%@ auth age: %@": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ 认证已过：%@"
+          }
+        }
+      }
+    },
+    "%@ presence": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ 在线状态"
+          }
+        }
+      }
+    },
+    "%@ · %@": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ · %@"
+          }
+        }
+      }
+    },
+    "%@:": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@："
+          }
+        }
+      }
+    },
+    "%@ms": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ 毫秒"
+          }
+        }
+      }
+    },
+    "About": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "关于"
+          }
+        }
+      }
+    },
+    "About OpenClaw": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "关于 OpenClaw"
+          }
+        }
+      }
+    },
+    "Action": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "动作"
+          }
+        }
+      }
+    },
+    "Action subtitle": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "动作副标题"
+          }
+        }
+      }
+    },
+    "Add": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "添加"
+          }
+        }
+      }
+    },
+    "Add additional language": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "添加额外语言"
+          }
+        }
+      }
+    },
+    "Add allowlist path pattern (case-insensitive globs)": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "添加允许列表路径模式（不区分大小写的 glob）"
+          }
+        }
+      }
+    },
+    "Add language": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "添加语言"
+          }
+        }
+      }
+    },
+    "Add word": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "添加词条"
+          }
+        }
+      }
+    },
+    "Additional languages": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "额外语言"
+          }
+        }
+      }
+    },
+    "Advanced": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "高级"
+          }
+        }
+      }
+    },
+    "Agent": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "助手"
+          }
+        }
+      }
+    },
+    "Agent Events": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "助手事件"
+          }
+        }
+      }
+    },
+    "Agent request failed": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "助手请求失败"
+          }
+        }
+      }
+    },
+    "Agent workspace": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "助手工作区"
+          }
+        }
+      }
+    },
+    "All": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "全部"
+          }
+        }
+      }
+    },
+    "All good.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "一切正常。"
+          }
+        }
+      }
+    },
+    "All set": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已就绪"
+          }
+        }
+      }
+    },
+    "Allow Camera": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "允许摄像头"
+          }
+        }
+      }
+    },
+    "Allow Canvas": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "允许 Canvas"
+          }
+        }
+      }
+    },
+    "Allow Once": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "仅允许一次"
+          }
+        }
+      }
+    },
+    "Allow device to connect?": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "允许设备连接？"
+          }
+        }
+      }
+    },
+    "Allow node to connect?": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "允许节点连接？"
+          }
+        }
+      }
+    },
+    "Allow signed tools (e.g. `peekaboo`) to drive UI automation via PeekabooBridge.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "允许已签名的工具（如 `peekaboo`）通过 PeekabooBridge 驱动 UI 自动化。"
+          }
+        }
+      }
+    },
+    "Allow the agent to capture a photo or short video via the built-in camera.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "允许助手通过内置摄像头拍照或录制短视频。"
+          }
+        }
+      }
+    },
+    "Allow the agent to show and control the Canvas panel.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "允许助手显示并控制 Canvas 面板。"
+          }
+        }
+      }
+    },
+    "Allow these so OpenClaw can notify and capture when needed.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "允许这些权限，使 OpenClaw 能在需要时通知并捕获信息。"
+          }
+        }
+      }
+    },
+    "Allow this command?": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "允许执行此命令？"
+          }
+        }
+      }
+    },
+    "Allowlists are per-agent. Select an agent to edit its allowlist.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "允许列表按助手独立管理。选择一个助手来编辑其允许列表。"
+          }
+        }
+      }
+    },
+    "Always": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "始终"
+          }
+        }
+      }
+    },
+    "Always Allow": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "始终允许"
+          }
+        }
+      }
+    },
+    "Always may require System Settings to approve background location.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“始终”模式可能需要在系统设置中批准后台定位权限。"
+          }
+        }
+      }
+    },
+    "Announce summary": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "播报摘要"
+          }
+        }
+      }
+    },
+    "App": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "应用"
+          }
+        }
+      }
+    },
+    "App Logging": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "应用日志"
+          }
+        }
+      }
+    },
+    "App Store": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App Store"
+          }
+        }
+      }
+    },
+    "Approve": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "批准"
+          }
+        }
+      }
+    },
+    "Approve this device from an already-paired OpenClaw client. In your OpenClaw chat, run `/pair approve`, then click **Check connection** again.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在已配对的 OpenClaw 客户端上批准此设备。在 OpenClaw 聊天中运行 `/pair approve`，然后再次点击 **Check connection**。"
+          }
+        }
+      }
+    },
+    "Ask controls prompt behavior; fallback is used when no companion UI is reachable.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "询问项控制提示行为；当无法访问伴侣 UI 时使用回退方式。"
+          }
+        }
+      }
+    },
+    "Ask mode": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "询问模式"
+          }
+        }
+      }
+    },
+    "Attach only (skip launchd install)": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "仅连接（跳过 launchd 安装）"
+          }
+        }
+      }
+    },
+    "Auth: bootstrap token (setup code)": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "认证：引导令牌（配置码）"
+          }
+        }
+      }
+    },
+    "Auth: device token (paired device)": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "认证：设备令牌（已配对设备）"
+          }
+        }
+      }
+    },
+    "Auth: none": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "认证：无"
+          }
+        }
+      }
+    },
+    "Auto-allow skill CLIs": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自动允许技能 CLI"
+          }
+        }
+      }
+    },
+    "Auto-delete": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自动删除"
+          }
+        }
+      }
+    },
+    "Auto-detect (%@)": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自动检测（%@）"
+          }
+        }
+      }
+    },
+    "Automatically start OpenClaw after you sign in.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "登录后自动启动 OpenClaw。"
+          }
+        }
+      }
+    },
+    "BROWSER_DISABLED: enable Browser in Settings": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "BROWSER_DISABLED：在设置中启用浏览器"
+          }
+        }
+      }
+    },
+    "Back": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "返回"
+          }
+        }
+      }
+    },
+    "Basics": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "基本"
+          }
+        }
+      }
+    },
+    "Browser Control": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "浏览器控制"
+          }
+        }
+      }
+    },
+    "Built %@%@": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "构建于 %@%@"
+          }
+        }
+      }
+    },
+    "CAMERA_DISABLED: enable Camera in Settings": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CAMERA_DISABLED：在设置中启用摄像头"
+          }
+        }
+      }
+    },
+    "CANVAS_DISABLED: enable Canvas in Settings": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CANVAS_DISABLED：在设置中启用 Canvas"
+          }
+        }
+      }
+    },
+    "CLI install finished": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CLI 安装完成"
+          }
+        }
+      }
+    },
+    "CLI path": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CLI 路径"
+          }
+        }
+      }
+    },
+    "Camera": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "摄像头"
+          }
+        }
+      }
+    },
+    "Camera unavailable": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "摄像头不可用"
+          }
+        }
+      }
+    },
+    "Cancel": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "取消"
+          }
+        }
+      }
+    },
+    "Cannot reach gateway at localhost:%@; ensure the gateway is running.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "无法连接到 localhost:%@ 上的 Gateway；请确认 Gateway 正在运行。"
+          }
+        }
+      }
+    },
+    "Canvas": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Canvas"
+          }
+        }
+      }
+    },
+    "Canvas error": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Canvas 错误"
+          }
+        }
+      }
+    },
+    "Canvas: 403": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Canvas：403"
+          }
+        }
+      }
+    },
+    "Canvas: 404": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Canvas：404"
+          }
+        }
+      }
+    },
+    "Caps": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "大写锁定"
+          }
+        }
+      }
+    },
+    "Card": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "卡片"
+          }
+        }
+      }
+    },
+    "Channels": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "渠道"
+          }
+        }
+      }
+    },
+    "Check `gateway.auth.token` or `OPENCLAW_GATEWAY_TOKEN` on the gateway host and try again.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "请检查 Gateway 主机上的 `gateway.auth.token` 或 `OPENCLAW_GATEWAY_TOKEN`，然后重试。"
+          }
+        }
+      }
+    },
+    "Check connection": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "检查连接"
+          }
+        }
+      }
+    },
+    "Check for Updates…": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "检查更新…"
+          }
+        }
+      }
+    },
+    "Check for updates automatically": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自动检查更新"
+          }
+        }
+      }
+    },
+    "Check gateway ports": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "检查 Gateway 端口"
+          }
+        }
+      }
+    },
+    "Check which process owns %@ and suggest fixes.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "检查占用 %@ 的进程并给出修复建议。"
+          }
+        }
+      }
+    },
+    "Checking remote gateway…": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "正在检查远程 Gateway…"
+          }
+        }
+      }
+    },
+    "Checking…": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "检查中…"
+          }
+        }
+      }
+    },
+    "Checks the real remote websocket and auth handshake.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "检查真实的远程 WebSocket 与鉴权握手。"
+          }
+        }
+      }
+    },
+    "Choose file…": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "选择文件…"
+          }
+        }
+      }
+    },
+    "Choose models.generated.ts…": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "选择 models.generated.ts…"
+          }
+        }
+      }
+    },
+    "Choose your Gateway": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "选择你的 Gateway"
+          }
+        }
+      }
+    },
+    "Clear": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "清除"
+          }
+        }
+      }
+    },
+    "Clear log": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "清除日志"
+          }
+        }
+      }
+    },
+    "Click the OpenClaw menu bar icon for quick chat and status.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "点击 OpenClaw 菜单栏图标可快速聊天和查看状态。"
+          }
+        }
+      }
+    },
+    "Close Canvas": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "关闭 Canvas"
+          }
+        }
+      }
+    },
+    "Commands": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "命令"
+          }
+        }
+      }
+    },
+    "Compact Session Log": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "压缩会话日志"
+          }
+        }
+      }
+    },
+    "Compact failed": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "压缩失败"
+          }
+        }
+      }
+    },
+    "Compact session log?": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "压缩会话日志？"
+          }
+        }
+      }
+    },
+    "Config": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "配置"
+          }
+        }
+      }
+    },
+    "Config: %@": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "配置：%@"
+          }
+        }
+      }
+    },
+    "Configure later": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "稍后配置"
+          }
+        }
+      }
+    },
+    "Connect WhatsApp or Telegram": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "连接 WhatsApp 或 Telegram"
+          }
+        }
+      }
+    },
+    "Connected": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已连接"
+          }
+        }
+      }
+    },
+    "Connected Instances": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已连接的实例"
+          }
+        }
+      }
+    },
+    "Connected via paired device": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "通过已配对设备连接"
+          }
+        }
+      }
+    },
+    "Connected with gateway token": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "使用 Gateway 令牌连接"
+          }
+        }
+      }
+    },
+    "Connected with password": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "使用密码连接"
+          }
+        }
+      }
+    },
+    "Connected with setup code": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "使用配置码连接"
+          }
+        }
+      }
+    },
+    "Connecting…": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "连接中…"
+          }
+        }
+      }
+    },
+    "Context": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "上下文"
+          }
+        }
+      }
+    },
+    "Context usage": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "上下文使用量"
+          }
+        }
+      }
+    },
+    "Continue": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "继续"
+          }
+        }
+      }
+    },
+    "Control channel": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "控制通道"
+          }
+        }
+      }
+    },
+    "Control other apps (e.g. Terminal) for automation actions": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "控制其他应用（例如 Terminal）以执行自动化操作"
+          }
+        }
+      }
+    },
+    "Controls the macOS app log verbosity.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "控制 macOS 应用的日志详细程度。"
+          }
+        }
+      }
+    },
+    "Copied": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已复制"
+          }
+        }
+      }
+    },
+    "Copy": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "复制"
+          }
+        }
+      }
+    },
+    "Copy Debug Summary": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "复制调试摘要"
+          }
+        }
+      }
+    },
+    "Copy install command": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "复制安装命令"
+          }
+        }
+      }
+    },
+    "Copy sample URL": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "复制示例 URL"
+          }
+        }
+      }
+    },
+    "Copy setup command": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "复制配置命令"
+          }
+        }
+      }
+    },
+    "Could not decode gateway session payload: %@": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "无法解析 Gateway 会话数据：%@"
+          }
+        }
+      }
+    },
+    "Could not reach the gateway for sessions: %@": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "无法通过 Gateway 获取会话：%@"
+          }
+        }
+      }
+    },
+    "Couldn’t load skills from the Gateway.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "无法从 Gateway 加载技能。"
+          }
+        }
+      }
+    },
+    "Create a schedule that wakes OpenClaw via the Gateway. ": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "创建通过 Gateway 唤醒 OpenClaw 的定时任务。"
+          }
+        }
+      }
+    },
+    "Create workspace": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "创建工作区"
+          }
+        }
+      }
+    },
+    "Cron": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "定时任务"
+          }
+        }
+      }
+    },
+    "Cron scheduler is disabled": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "定时任务调度器已禁用"
+          }
+        }
+      }
+    },
+    "Dashboard URL:": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "控制面板 URL："
+          }
+        }
+      }
+    },
+    "Dashboard unavailable": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "仪表盘不可用"
+          }
+        }
+      }
+    },
+    "Debug": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "调试"
+          }
+        }
+      }
+    },
+    "Deep link blocked": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "深度链接已拦截"
+          }
+        }
+      }
+    },
+    "Deep link too large": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "深度链接过大"
+          }
+        }
+      }
+    },
+    "Deep links (openclaw://…) are always enabled; the key controls unattended runs.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "深层链接（openclaw://…）始终启用；该密钥仅控制无人值守运行。"
+          }
+        }
+      }
+    },
+    "Delete": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "删除"
+          }
+        }
+      }
+    },
+    "Delete Session": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "删除会话"
+          }
+        }
+      }
+    },
+    "Delete after successful run": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "成功运行后删除"
+          }
+        }
+      }
+    },
+    "Delete cron job?": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "删除定时任务？"
+          }
+        }
+      }
+    },
+    "Delete failed": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "删除失败"
+          }
+        }
+      }
+    },
+    "Delete session?": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "删除会话？"
+          }
+        }
+      }
+    },
+    "Delete…": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "删除…"
+          }
+        }
+      }
+    },
+    "Description": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "描述"
+          }
+        }
+      }
+    },
+    "Details: %@": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "详情：%@"
+          }
+        }
+      }
+    },
+    "Device pairing pending (%@)%@": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "设备配对待批准（%@）%@"
+          }
+        }
+      }
+    },
+    "Direct (ws/wss)": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "直连（ws/wss）"
+          }
+        }
+      }
+    },
+    "Direct Download": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "直接下载"
+          }
+        }
+      }
+    },
+    "Direct mode requires wss:// for remote hosts. ws:// is only allowed for localhost/127.0.0.1.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "直连模式下远程主机必须使用 wss://；ws:// 仅允许用于 localhost/127.0.0.1。"
+          }
+        }
+      }
+    },
+    "Disable": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "禁用"
+          }
+        }
+      }
+    },
+    "Disabled in config": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已在配置中禁用"
+          }
+        }
+      }
+    },
+    "Disconnected": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已断开"
+          }
+        }
+      }
+    },
+    "Disconnected (using System default)": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已断开（使用系统默认）"
+          }
+        }
+      }
+    },
+    "Discover OpenClaw gateways on your LAN": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在局域网中发现 OpenClaw Gateway"
+          }
+        }
+      }
+    },
+    "Do not fail the job if announce fails": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "播报失败时不判定任务失败"
+          }
+        }
+      }
+    },
+    "Don't Allow": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "不允许"
+          }
+        }
+      }
+    },
+    "Edit": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "编辑"
+          }
+        }
+      }
+    },
+    "Edit cron job": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "编辑定时任务"
+          }
+        }
+      }
+    },
+    "Edit…": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "编辑…"
+          }
+        }
+      }
+    },
+    "Email": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "邮箱"
+          }
+        }
+      }
+    },
+    "Enable": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "启用"
+          }
+        }
+      }
+    },
+    "Enable Peekaboo Bridge": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "启用 Peekaboo Bridge"
+          }
+        }
+      }
+    },
+    "Enable Voice Wake": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "启用语音唤醒"
+          }
+        }
+      }
+    },
+    "Enable Voice Wake in Settings for hands-free commands with a live transcript overlay.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在设置中启用语音唤醒，即可免手操作并显示实时转写覆盖层。"
+          }
+        }
+      }
+    },
+    "Enable debug tools": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "启用调试工具"
+          }
+        }
+      }
+    },
+    "Enable idle blinks and wiggles on the status icon.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在状态栏图标上启用空闲眨眼和抖动动画。"
+          }
+        }
+      }
+    },
+    "Enable/disable Canvas in General settings.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在“通用”设置中启用或禁用 Canvas。"
+          }
+        }
+      }
+    },
+    "Enabled": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已启用"
+          }
+        }
+      }
+    },
+    "English": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "English"
+          }
+        }
+      }
+    },
+    "Error": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "错误"
+          }
+        }
+      }
+    },
+    "Error: %@": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "错误：%@"
+          }
+        }
+      }
+    },
+    "Eval": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "求值"
+          }
+        }
+      }
+    },
+    "Eval JS": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "执行 JS"
+          }
+        }
+      }
+    },
+    "Exec Approvals": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "执行审批"
+          }
+        }
+      }
+    },
+    "Exec approvals": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "执行审批"
+          }
+        }
+      }
+    },
+    "Executable": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "可执行文件"
+          }
+        }
+      }
+    },
+    "Experiments": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "实验特性"
+          }
+        }
+      }
+    },
+    "Exposure": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "曝光"
+          }
+        }
+      }
+    },
+    "Exposure mode": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "曝光模式"
+          }
+        }
+      }
+    },
+    "Extra %@": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "额外 %@"
+          }
+        }
+      }
+    },
+    "Extra entries": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "额外条目"
+          }
+        }
+      }
+    },
+    "Fallback: %@": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "回退：%@"
+          }
+        }
+      }
+    },
+    "Feature": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "功能"
+          }
+        }
+      }
+    },
+    "Filter": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "筛选"
+          }
+        }
+      }
+    },
+    "Finish": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "完成"
+          }
+        }
+      }
+    },
+    "Follow system": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "跟随系统"
+          }
+        }
+      }
+    },
+    "Follow the guided setup from the Gateway. This keeps onboarding in sync with the CLI.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "按照 Gateway 的引导完成设置。这能让初始设置与 CLI 保持一致。"
+          }
+        }
+      }
+    },
+    "Funnel requires authentication.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funnel 需要鉴权。"
+          }
+        }
+      }
+    },
+    "Gateway": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gateway"
+          }
+        }
+      }
+    },
+    "Gateway %@ detected": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "检测到 Gateway %@"
+          }
+        }
+      }
+    },
+    "Gateway URL": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gateway URL"
+          }
+        }
+      }
+    },
+    "Gateway URL must use wss:// for remote hosts (ws:// only for localhost).": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "远程主机的 Gateway URL 必须使用 wss://（ws:// 仅限 localhost）。"
+          }
+        }
+      }
+    },
+    "Gateway auto-starts in local mode via launchd (%@).": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "本地模式下 Gateway 通过 launchd（%@）自动启动。"
+          }
+        }
+      }
+    },
+    "Gateway connection was closed; start the gateway (localhost:%@) and retry.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gateway 连接已关闭；请启动 Gateway（localhost:%@）后重试。"
+          }
+        }
+      }
+    },
+    "Gateway disconnected": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gateway 已断开"
+          }
+        }
+      }
+    },
+    "Gateway error: %@": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gateway 错误：%@"
+          }
+        }
+      }
+    },
+    "Gateway listener found on port %@ (%@) but health check failed: %@": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在端口 %@（%@）上检测到 Gateway，但健康检查失败：%@"
+          }
+        }
+      }
+    },
+    "Gateway listener found on port %@ but health check failed: %@": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在端口 %@ 上检测到 Gateway，但健康检查失败：%@"
+          }
+        }
+      }
+    },
+    "Gateway offline": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gateway 离线"
+          }
+        }
+      }
+    },
+    "Gateway on port %@ is incompatible (protocol mismatch). Update the app/gateway.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "端口 %@ 上的 Gateway 不兼容（协议不匹配）。请更新应用或 Gateway。"
+          }
+        }
+      }
+    },
+    "Gateway pairing only": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "仅 Gateway 配对"
+          }
+        }
+      }
+    },
+    "Gateway ready": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gateway 就绪"
+          }
+        }
+      }
+    },
+    "Gateway rejected token; set %@ or clear it on the gateway. Reason: %@": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gateway 拒绝了令牌；请在 Gateway 上设置 %@ 或清除该令牌。原因：%@"
+          }
+        }
+      }
+    },
+    "Gateway request timed out; check gateway on localhost:%@.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gateway 请求超时；请检查 localhost:%@ 上的 Gateway。"
+          }
+        }
+      }
+    },
+    "Gateway request timed out; check the gateway process on localhost:%@.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gateway 请求超时；请检查 localhost:%@ 上的 Gateway 进程。"
+          }
+        }
+      }
+    },
+    "Gateway starts automatically on this Mac.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gateway 会在此 Mac 上自动启动。"
+          }
+        }
+      }
+    },
+    "Gateway startup": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gateway 启动"
+          }
+        }
+      }
+    },
+    "Gateway token": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gateway 令牌"
+          }
+        }
+      }
+    },
+    "Gateway token mismatch. Check gateway.auth.token or OPENCLAW_GATEWAY_TOKEN on the gateway host.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gateway 令牌不匹配。请检查 Gateway 主机上的 gateway.auth.token 或 OPENCLAW_GATEWAY_TOKEN。"
+          }
+        }
+      }
+    },
+    "General": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "通用"
+          }
+        }
+      }
+    },
+    "Get your key →": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "获取密钥 →"
+          }
+        }
+      }
+    },
+    "GitHub": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GitHub"
+          }
+        }
+      }
+    },
+    "Give your agent more powers": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "为你的助手赋予更多能力"
+          }
+        }
+      }
+    },
+    "Grant": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "授权"
+          }
+        }
+      }
+    },
+    "Grant permissions": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "授予权限"
+          }
+        }
+      }
+    },
+    "Granted": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已授权"
+          }
+        }
+      }
+    },
+    "HTTP %@": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "HTTP %@"
+          }
+        }
+      }
+    },
+    "Health check pending…": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "健康检查等待中…"
+          }
+        }
+      }
+    },
+    "Health check timed out": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "健康检查超时"
+          }
+        }
+      }
+    },
+    "Heard: %@": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "听到：%@"
+          }
+        }
+      }
+    },
+    "Hello! I was just born. Who am I? What am I? Who are you? How should I call you?": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你好！我刚刚诞生。我是谁？我是什么？你是谁？我该如何称呼你？"
+          }
+        }
+      }
+    },
+    "Hide Advanced": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "隐藏高级选项"
+          }
+        }
+      }
+    },
+    "Hide panel": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "隐藏面板"
+          }
+        }
+      }
+    },
+    "Hold Right Option to talk": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "按住右 Option 键说话"
+          }
+        }
+      }
+    },
+    "Host": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "主机"
+          }
+        }
+      }
+    },
+    "INVALID_REQUEST: bins required": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "INVALID_REQUEST：需要 bins 参数"
+          }
+        }
+      }
+    },
+    "INVALID_REQUEST: command required": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "INVALID_REQUEST：需要 command 参数"
+          }
+        }
+      }
+    },
+    "INVALID_REQUEST: empty notification": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "INVALID_REQUEST：通知为空"
+          }
+        }
+      }
+    },
+    "INVALID_REQUEST: exec approvals base hash required; reload and retry": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "INVALID_REQUEST：需要执行审批基线哈希；请重新加载后重试"
+          }
+        }
+      }
+    },
+    "INVALID_REQUEST: exec approvals base hash unavailable; reload and retry": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "INVALID_REQUEST：执行审批基线哈希不可用；请重新加载后重试"
+          }
+        }
+      }
+    },
+    "INVALID_REQUEST: exec approvals changed; reload and retry": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "INVALID_REQUEST：执行审批已变更；请重新加载后重试"
+          }
+        }
+      }
+    },
+    "INVALID_REQUEST: rawCommand does not match command": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "INVALID_REQUEST：rawCommand 与 command 不匹配"
+          }
+        }
+      }
+    },
+    "INVALID_REQUEST: screen format must be mp4": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "INVALID_REQUEST：screen 格式必须为 mp4"
+          }
+        }
+      }
+    },
+    "INVALID_REQUEST: unknown command": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "INVALID_REQUEST：未知命令"
+          }
+        }
+      }
+    },
+    "IP": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "IP"
+          }
+        }
+      }
+    },
+    "Identity file": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "身份密钥文件"
+          }
+        }
+      }
+    },
+    "If you do not have another paired OpenClaw client yet, approve the pending request on the gateway host with `openclaw devices approve`.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "如果你还没有其他已配对的 OpenClaw 客户端，请在 Gateway 主机上使用 `openclaw devices approve` 批准待处理的请求。"
+          }
+        }
+      }
+    },
+    "Install CLI": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "安装 CLI"
+          }
+        }
+      }
+    },
+    "Install OpenClaw CLI?": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "是否安装 OpenClaw CLI？"
+          }
+        }
+      }
+    },
+    "Install on Gateway": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "安装到 Gateway"
+          }
+        }
+      }
+    },
+    "Install on This Mac": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "安装到此 Mac"
+          }
+        }
+      }
+    },
+    "Install the CLI": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "安装 CLI"
+          }
+        }
+      }
+    },
+    "Installed at %@": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已安装于 %@"
+          }
+        }
+      }
+    },
+    "Installed: %@ · Required: %@": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已安装：%@ · 需要：%@"
+          }
+        }
+      }
+    },
+    "Instances": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "实例"
+          }
+        }
+      }
+    },
+    "Invalid screen index %@": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "屏幕索引无效 %@"
+          }
+        }
+      }
+    },
+    "Isolated jobs always run an agent turn. Announce sends a short summary to a channel.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "隔离任务始终运行一轮助手。播报会向渠道发送简短摘要。"
+          }
+        }
+      }
+    },
+    "Keep OpenClaw visible in the Dock instead of menu-bar-only mode.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在 Dock 中保留 OpenClaw 图标，而非仅菜单栏模式。"
+          }
+        }
+      }
+    },
+    "Keeps the last 400 lines; archives the old file.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保留最后 400 行；归档旧文件。"
+          }
+        }
+      }
+    },
+    "Key": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "密钥"
+          }
+        }
+      }
+    },
+    "Kill": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "结束进程"
+          }
+        }
+      }
+    },
+    "Kill %@ (%@)?": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "终止 %@（%@）？"
+          }
+        }
+      }
+    },
+    "LOCATION_DISABLED: enable Location in Settings": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "LOCATION_DISABLED：在设置中启用定位"
+          }
+        }
+      }
+    },
+    "LOCATION_PERMISSION_REQUIRED: grant Location permission": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "LOCATION_PERMISSION_REQUIRED：请授予定位权限"
+          }
+        }
+      }
+    },
+    "LOCATION_TIMEOUT: no fix in time": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "LOCATION_TIMEOUT：未及时获取定位"
+          }
+        }
+      }
+    },
+    "LOCATION_UNAVAILABLE: %@": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "LOCATION_UNAVAILABLE：%@"
+          }
+        }
+      }
+    },
+    "Language": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "语言"
+          }
+        }
+      }
+    },
+    "Language change takes effect after the app restarts.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "语言切换将在应用重新启动后生效。"
+          }
+        }
+      }
+    },
+    "Languages are tried in order. Models may need a first-use download on macOS 26.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "按顺序尝试语言。macOS 26 上模型首次使用可能需要下载。"
+          }
+        }
+      }
+    },
+    "Last %@d": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "最近 %@ 天"
+          }
+        }
+      }
+    },
+    "Last activity: %@ %@": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "最近活动：%@ %@"
+          }
+        }
+      }
+    },
+    "Last check %@": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "最近检查 %@"
+          }
+        }
+      }
+    },
+    "Last check: %@": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "最近检查：%@"
+          }
+        }
+      }
+    },
+    "Last command: %@": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "最近命令：%@"
+          }
+        }
+      }
+    },
+    "Last failure: %@": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "最近失败：%@"
+          }
+        }
+      }
+    },
+    "Last heartbeat: %@": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "最近心跳：%@"
+          }
+        }
+      }
+    },
+    "Last heartbeat: %@ · %@": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "最近心跳：%@ · %@"
+          }
+        }
+      }
+    },
+    "Last run": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "上次运行"
+          }
+        }
+      }
+    },
+    "Last status": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "上次状态"
+          }
+        }
+      }
+    },
+    "Last used %@": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "最近使用 %@"
+          }
+        }
+      }
+    },
+    "Later": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "稍后"
+          }
+        }
+      }
+    },
+    "Latest presence beacons from OpenClaw nodes. Updated periodically.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "来自 OpenClaw 节点的最新在线心跳。定期更新。"
+          }
+        }
+      }
+    },
+    "Launch at login": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "登录时启动"
+          }
+        }
+      }
+    },
+    "Link channel": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "连接渠道"
+          }
+        }
+      }
+    },
+    "Listen for a wake phrase (e.g. \"Claude\") before running voice commands. Voice recognition runs fully on-device.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在执行语音命令前监听唤醒词（例如 \"Claude\"）。语音识别完全在设备本地运行。"
+          }
+        }
+      }
+    },
+    "Live level": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "实时等级"
+          }
+        }
+      }
+    },
+    "Loaded %@ models": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已加载 %@ 个模型"
+          }
+        }
+      }
+    },
+    "Loading devices...": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "正在加载设备…"
+          }
+        }
+      }
+    },
+    "Local (this Mac)": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "本地（此 Mac）"
+          }
+        }
+      }
+    },
+    "Local fallback for model picker when gateway models.list is unavailable.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "当 Gateway 的 models.list 不可用时，模型选择器使用的本地备选。"
+          }
+        }
+      }
+    },
+    "Local mode needs the CLI so launchd can run the gateway.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "本地模式需要 CLI 才能让 launchd 运行 Gateway。"
+          }
+        }
+      }
+    },
+    "Local mode required. Update settings on the gateway host.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "需要本地模式。请在 Gateway 主机上更新设置。"
+          }
+        }
+      }
+    },
+    "Location Access": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "位置访问权限"
+          }
+        }
+      }
+    },
+    "Log file not found": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "未找到日志文件"
+          }
+        }
+      }
+    },
+    "Logout": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "退出登录"
+          }
+        }
+      }
+    },
+    "Logs": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "日志"
+          }
+        }
+      }
+    },
+    "Looked for openclaw logs in /tmp/openclaw/.\nRun a health check or send a message to generate activity, then try again.\n": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已在 /tmp/openclaw/ 查找 openclaw 日志。\n请运行一次健康检查或发送一条消息以生成活动，然后再试。\n"
+          }
+        }
+      }
+    },
+    "Mac Studio": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mac Studio"
+          }
+        }
+      }
+    },
+    "MacBook Pro": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MacBook Pro"
+          }
+        }
+      }
+    },
+    "Main": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "主要"
+          }
+        }
+      }
+    },
+    "Main jobs post a system event into the current main session. ": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "主任务会向当前主会话发送系统事件。"
+          }
+        }
+      }
+    },
+    "Manage Gateway cron jobs (main session vs isolated runs) and inspect run history.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "管理 Gateway 定时任务（主会话与隔离运行），并查看运行历史。"
+          }
+        }
+      }
+    },
+    "Managed by Nix": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "由 Nix 管理"
+          }
+        }
+      }
+    },
+    "Meet your agent": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "认识你的助手"
+          }
+        }
+      }
+    },
+    "Menu bar companion for notifications, screenshots, and privileged agent actions.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "菜单栏伴侣，用于通知、截图以及特权助手操作。"
+          }
+        }
+      }
+    },
+    "Message exceeds 20,000 characters.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "消息超过 20000 个字符。"
+          }
+        }
+      }
+    },
+    "Message is too long to confirm safely (%@ chars; max %@ without key).": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "消息过长，无法安全确认（%@ 个字符；无密钥时最多 %@ 个字符）。"
+          }
+        }
+      }
+    },
+    "Microphone": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "麦克风"
+          }
+        }
+      }
+    },
+    "Microphone unavailable": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "麦克风不可用"
+          }
+        }
+      }
+    },
+    "Missing binaries: %@": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "缺失可执行文件：%@"
+          }
+        }
+      }
+    },
+    "Missing env: %@": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "缺失环境变量：%@"
+          }
+        }
+      }
+    },
+    "Mode": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "模式"
+          }
+        }
+      }
+    },
+    "More Devices...": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "更多设备..."
+          }
+        }
+      }
+    },
+    "More preview…": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "更多预览…"
+          }
+        }
+      }
+    },
+    "NOT_AUTHORIZED: notifications": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NOT_AUTHORIZED：通知"
+          }
+        }
+      }
+    },
+    "Name": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "名称"
+          }
+        }
+      }
+    },
+    "Native SwiftUI": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "原生 SwiftUI"
+          }
+        }
+      }
+    },
+    "Nearby gateways": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "附近的 Gateway"
+          }
+        }
+      }
+    },
+    "Needs Setup": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "需要设置"
+          }
+        }
+      }
+    },
+    "New Job": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "新建任务"
+          }
+        }
+      }
+    },
+    "New cron job": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "新建定时任务"
+          }
+        }
+      }
+    },
+    "Next": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "下一步"
+          }
+        }
+      }
+    },
+    "Next run": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "下次运行"
+          }
+        }
+      }
+    },
+    "No": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "否"
+          }
+        }
+      }
+    },
+    "No Sound": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "无声音"
+          }
+        }
+      }
+    },
+    "No active sessions": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "暂无活动会话"
+          }
+        }
+      }
+    },
+    "No allowlisted commands yet.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "尚无允许列表命令。"
+          }
+        }
+      }
+    },
+    "No automatic Tailscale configuration.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "未启用 Tailscale 自动配置。"
+          }
+        }
+      }
+    },
+    "No config sections available.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "没有可用的配置项。"
+          }
+        }
+      }
+    },
+    "No connection to gateway": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "未连接到 Gateway"
+          }
+        }
+      }
+    },
+    "No devices yet": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "暂无设备"
+          }
+        }
+      }
+    },
+    "No displays available for screen recording": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "没有可用于屏幕录制的显示器"
+          }
+        }
+      }
+    },
+    "No extra entries yet.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "暂无额外条目。"
+          }
+        }
+      }
+    },
+    "No frames captured": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "未捕获到画面"
+          }
+        }
+      }
+    },
+    "No gateways found yet.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "尚未发现任何 Gateway。"
+          }
+        }
+      }
+    },
+    "No instances reported yet.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "尚无实例上报。"
+          }
+        }
+      }
+    },
+    "No network connectivity; cannot reach gateway.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "无网络连接；无法访问 Gateway。"
+          }
+        }
+      }
+    },
+    "No recent activity": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "最近无活动"
+          }
+        }
+      }
+    },
+    "No run log entries yet.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "尚无运行日志条目。"
+          }
+        }
+      }
+    },
+    "No sessions yet. They appear after the first inbound message or heartbeat.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "暂无会话。会话将在首次收到消息或心跳后出现。"
+          }
+        }
+      }
+    },
+    "No skills match this filter.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "没有技能匹配此筛选条件。"
+          }
+        }
+      }
+    },
+    "No skills reported yet.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "尚未上报任何技能。"
+          }
+        }
+      }
+    },
+    "No token yet? Generate one on the gateway host with `openclaw doctor --generate-gateway-token`, then set it as `gateway.auth.token`.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "还没有令牌？请在 Gateway 主机上运行 `openclaw doctor --generate-gateway-token` 生成令牌，然后将其设置为 `gateway.auth.token`。"
+          }
+        }
+      }
+    },
+    "Node %@": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Node %@"
+          }
+        }
+      }
+    },
+    "Node %@; gateway %@ %@": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "节点 %@；Gateway %@ %@"
+          }
+        }
+      }
+    },
+    "Node ID": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "节点 ID"
+          }
+        }
+      }
+    },
+    "Node connect": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "节点连接"
+          }
+        }
+      }
+    },
+    "Node connected": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "节点已连接"
+          }
+        }
+      }
+    },
+    "Node disconnect": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "节点断开"
+          }
+        }
+      }
+    },
+    "Node pairing approved": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "节点配对已批准"
+          }
+        }
+      }
+    },
+    "Node pairing rejected": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "节点配对已拒绝"
+          }
+        }
+      }
+    },
+    "None": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "无"
+          }
+        }
+      }
+    },
+    "Not configured": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "尚未配置"
+          }
+        }
+      }
+    },
+    "Not now": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "暂不"
+          }
+        }
+      }
+    },
+    "Note: macOS may require restarting OpenClaw after enabling Accessibility or Screen Recording.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "提示：在启用“辅助功能”或“屏幕录制”后，macOS 可能需要重启 OpenClaw。"
+          }
+        }
+      }
+    },
+    "OK": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "好"
+          }
+        }
+      }
+    },
+    "Off": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "关闭"
+          }
+        }
+      }
+    },
+    "Open": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "打开"
+          }
+        }
+      }
+    },
+    "Open Agent Events": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "打开助手事件"
+          }
+        }
+      }
+    },
+    "Open Agent Events…": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "打开助手事件…"
+          }
+        }
+      }
+    },
+    "Open Canvas": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "打开 Canvas"
+          }
+        }
+      }
+    },
+    "Open Chat": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "打开聊天"
+          }
+        }
+      }
+    },
+    "Open Config Folder": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "打开配置文件夹"
+          }
+        }
+      }
+    },
+    "Open Dashboard": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "打开控制面板"
+          }
+        }
+      }
+    },
+    "Open Log": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "打开日志"
+          }
+        }
+      }
+    },
+    "Open Session Log": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "打开会话日志"
+          }
+        }
+      }
+    },
+    "Open Session Store": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "打开会话存储"
+          }
+        }
+      }
+    },
+    "Open Settings": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "打开设置"
+          }
+        }
+      }
+    },
+    "Open folder": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "打开文件夹"
+          }
+        }
+      }
+    },
+    "Open logs": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "打开日志"
+          }
+        }
+      }
+    },
+    "Open the menu bar panel": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "打开菜单栏面板"
+          }
+        }
+      }
+    },
+    "Open the menu bar panel for quick chat; the agent can show previews ": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "打开菜单栏面板以快速聊天；助手可以显示预览"
+          }
+        }
+      }
+    },
+    "Open transcript": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "打开转录记录"
+          }
+        }
+      }
+    },
+    "OpenClaw": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OpenClaw"
+          }
+        }
+      }
+    },
+    "OpenClaw Active": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OpenClaw 运行中"
+          }
+        }
+      }
+    },
+    "OpenClaw Canvas": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OpenClaw Canvas"
+          }
+        }
+      }
+    },
+    "OpenClaw Chat": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OpenClaw Chat"
+          }
+        }
+      }
+    },
+    "OpenClaw Not Configured": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OpenClaw 未配置"
+          }
+        }
+      }
+    },
+    "OpenClaw active": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "启用 OpenClaw"
+          }
+        }
+      }
+    },
+    "OpenClaw is a powerful personal AI assistant that can connect to WhatsApp or Telegram.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OpenClaw 是一款强大的个人 AI 助手，可连接到 WhatsApp 或 Telegram。"
+          }
+        }
+      }
+    },
+    "OpenClaw is paused": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OpenClaw 已暂停"
+          }
+        }
+      }
+    },
+    "OpenClaw project root": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OpenClaw 项目根目录"
+          }
+        }
+      }
+    },
+    "OpenClaw reacts when any trigger appears in a transcription. ": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "当转写中出现任何触发词时，OpenClaw 将作出响应。"
+          }
+        }
+      }
+    },
+    "OpenClaw runs": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OpenClaw 运行于"
+          }
+        }
+      }
+    },
+    "Optional (default agent)": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "可选（默认助手）"
+          }
+        }
+      }
+    },
+    "Optional (e.g. America/Los_Angeles)": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "可选（例如 America/Los_Angeles）"
+          }
+        }
+      }
+    },
+    "Optional (e.g. low)": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "可选（例如 low）"
+          }
+        }
+      }
+    },
+    "Optional notes": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "可选备注"
+          }
+        }
+      }
+    },
+    "Optional override (phone number / chat id / Discord channel)": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "可选覆盖（手机号 / 聊天 ID / Discord 频道）"
+          }
+        }
+      }
+    },
+    "Other": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "其他"
+          }
+        }
+      }
+    },
+    "PERMISSION_MISSING: screenRecording": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "PERMISSION_MISSING：screenRecording"
+          }
+        }
+      }
+    },
+    "Paired": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已配对"
+          }
+        }
+      }
+    },
+    "Pairing approval pending (%@)%@": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "配对批准待处理（%@）%@"
+          }
+        }
+      }
+    },
+    "Pairing required. In an already-paired OpenClaw client, run /pair approve, then check the connection again.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "需要配对。请在已配对的 OpenClaw 客户端上运行 /pair approve，然后重新检查连接。"
+          }
+        }
+      }
+    },
+    "Partial: %@ entries missing cost": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "部分数据：%@ 条记录缺少费用"
+          }
+        }
+      }
+    },
+    "Password": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "密码"
+          }
+        }
+      }
+    },
+    "Paste the token configured on the gateway host. On the gateway host, run `openclaw config get gateway.auth.token`. If the gateway uses an environment variable instead, use `OPENCLAW_GATEWAY_TOKEN`.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "粘贴在 Gateway 主机上配置的令牌。在 Gateway 主机上运行 `openclaw config get gateway.auth.token`。如果 Gateway 改为使用环境变量，请使用 `OPENCLAW_GATEWAY_TOKEN`。"
+          }
+        }
+      }
+    },
+    "Path": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "路径"
+          }
+        }
+      }
+    },
+    "Path patterns only. Basename entries like \"echo\" are ignored.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "仅支持路径模式。像 \"echo\" 这样的基名条目会被忽略。"
+          }
+        }
+      }
+    },
+    "Path patterns only. Include '/', '~', or '\\\\'.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "仅支持路径模式。必须包含 '/'、'~' 或 '\\\\'。"
+          }
+        }
+      }
+    },
+    "Path to openclaw repo": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "openclaw 仓库路径"
+          }
+        }
+      }
+    },
+    "Paths": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "路径"
+          }
+        }
+      }
+    },
+    "Pattern": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "模式"
+          }
+        }
+      }
+    },
+    "Pattern cannot be empty.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "模式不能为空。"
+          }
+        }
+      }
+    },
+    "Pause to stop the OpenClaw gateway; no messages will be processed.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "暂停以停止 OpenClaw gateway；期间将不处理任何消息。"
+          }
+        }
+      }
+    },
+    "Payload": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "负载"
+          }
+        }
+      }
+    },
+    "Peek at the stored conversation buckets the CLI reuses for context and rate limits.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "查看 CLI 复用于上下文和速率限制的已存会话桶。"
+          }
+        }
+      }
+    },
+    "Permissions": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "权限"
+          }
+        }
+      }
+    },
+    "Pick Local or Remote to start the Gateway.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "选择“本地”或“远程”以启动 Gateway。"
+          }
+        }
+      }
+    },
+    "Platform": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "平台"
+          }
+        }
+      }
+    },
+    "Play": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "播放"
+          }
+        }
+      }
+    },
+    "Play menu bar icon animations": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "播放菜单栏图标动画"
+          }
+        }
+      }
+    },
+    "Port %@": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "端口 %@"
+          }
+        }
+      }
+    },
+    "Port %@ returned non-gateway data; another process is using it.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "端口 %@ 返回了非 Gateway 数据；另一个进程正在使用该端口。"
+          }
+        }
+      }
+    },
+    "Port diagnostics": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "端口诊断"
+          }
+        }
+      }
+    },
+    "Ports": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "端口"
+          }
+        }
+      }
+    },
+    "Precise Location": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "精确位置"
+          }
+        }
+      }
+    },
+    "Presence unavailable (%@), health probe failed: %@": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在线状态不可用（%@），健康探测失败：%@"
+          }
+        }
+      }
+    },
+    "Presence updated %@.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在线状态已更新 %@。"
+          }
+        }
+      }
+    },
+    "Press start, say a trigger word, and wait for detection.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "点击开始，说出触发词，然后等待检测。"
+          }
+        }
+      }
+    },
+    "Project root": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "项目根目录"
+          }
+        }
+      }
+    },
+    "Public HTTPS via Tailscale Funnel (requires auth).": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "通过 Tailscale Funnel 提供公网 HTTPS（需要认证）。"
+          }
+        }
+      }
+    },
+    "Quick actions": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "快捷操作"
+          }
+        }
+      }
+    },
+    "Quit": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "退出"
+          }
+        }
+      }
+    },
+    "Quit OpenClaw": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "退出 OpenClaw"
+          }
+        }
+      }
+    },
+    "Recent messages (expanded)": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "最近消息（展开）"
+          }
+        }
+      }
+    },
+    "Recent messages (last 10)": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "最近消息（最近 10 条）"
+          }
+        }
+      }
+    },
+    "Recheck": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "重新检查"
+          }
+        }
+      }
+    },
+    "Recognition language": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "识别语言"
+          }
+        }
+      }
+    },
+    "Refresh": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "刷新"
+          }
+        }
+      }
+    },
+    "Refresh status": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "刷新状态"
+          }
+        }
+      }
+    },
+    "Refreshing microphones…": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "正在刷新麦克风…"
+          }
+        }
+      }
+    },
+    "Reinstall CLI": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "重新安装 CLI"
+          }
+        }
+      }
+    },
+    "Reject": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "拒绝"
+          }
+        }
+      }
+    },
+    "Relink": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "重新关联"
+          }
+        }
+      }
+    },
+    "Reload": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "重新加载"
+          }
+        }
+      }
+    },
+    "Reload models": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "重新加载模型"
+          }
+        }
+      }
+    },
+    "Remote (another host)": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "远程（另一台主机）"
+          }
+        }
+      }
+    },
+    "Remote OpenClaw Active": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "远程 OpenClaw 运行中"
+          }
+        }
+      }
+    },
+    "Remote Tunnel": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "远程隧道"
+          }
+        }
+      }
+    },
+    "Remote connection": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "远程连接"
+          }
+        }
+      }
+    },
+    "Remote gateway checklist": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "远程 Gateway 检查清单"
+          }
+        }
+      }
+    },
+    "Remote gateway detected": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "检测到远程 Gateway"
+          }
+        }
+      }
+    },
+    "Remote gateway ready": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "远程 Gateway 就绪"
+          }
+        }
+      }
+    },
+    "Remote mode": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "远程模式"
+          }
+        }
+      }
+    },
+    "Remove": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "移除"
+          }
+        }
+      }
+    },
+    "Remove language": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "移除语言"
+          }
+        }
+      }
+    },
+    "Remove trigger word": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "移除触发词"
+          }
+        }
+      }
+    },
+    "Request access": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "请求访问权限"
+          }
+        }
+      }
+    },
+    "Require credentials": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "要求凭证"
+          }
+        }
+      }
+    },
+    "Required (e.g. “Daily summary”)": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "必填（例如“每日摘要”）"
+          }
+        }
+      }
+    },
+    "Required for local mode: installs `openclaw` so launchd can run the gateway.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "本地模式必需：安装 `openclaw` 以便 launchd 运行 gateway。"
+          }
+        }
+      }
+    },
+    "Requires config: %@": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "需要配置：%@"
+          }
+        }
+      }
+    },
+    "Reset": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "重置"
+          }
+        }
+      }
+    },
+    "Reset Remote Tunnel": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "重置远程隧道"
+          }
+        }
+      }
+    },
+    "Reset SSH tunnel": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "重置 SSH 隧道"
+          }
+        }
+      }
+    },
+    "Reset Session": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "重置会话"
+          }
+        }
+      }
+    },
+    "Reset defaults": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "恢复默认"
+          }
+        }
+      }
+    },
+    "Reset failed": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "重置失败"
+          }
+        }
+      }
+    },
+    "Reset session?": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "重置会话？"
+          }
+        }
+      }
+    },
+    "Resolved path: %@": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "解析路径：%@"
+          }
+        }
+      }
+    },
+    "Restart": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "重新启动"
+          }
+        }
+      }
+    },
+    "Restart App": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "重启应用"
+          }
+        }
+      }
+    },
+    "Restart Gateway": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "重启 Gateway"
+          }
+        }
+      }
+    },
+    "Restart Onboarding": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "重新开始初始设置"
+          }
+        }
+      }
+    },
+    "Restart OpenClaw": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "重启 OpenClaw"
+          }
+        }
+      }
+    },
+    "Restart app": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "重启应用"
+          }
+        }
+      }
+    },
+    "Restart now": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "立即重启"
+          }
+        }
+      }
+    },
+    "Restart onboarding": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "重新开始初始设置"
+          }
+        }
+      }
+    },
+    "Retry": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "重试"
+          }
+        }
+      }
+    },
+    "Retry now": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "立即重试"
+          }
+        }
+      }
+    },
+    "Retry remote discovery (Tailscale DNS-SD + Serve probe).": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "重试远程发现（Tailscale DNS-SD 与 Serve 探测）。"
+          }
+        }
+      }
+    },
+    "Reveal": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "显示"
+          }
+        }
+      }
+    },
+    "Reveal Logs": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在访达中显示日志"
+          }
+        }
+      }
+    },
+    "Reveal app in Finder": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在访达中显示应用"
+          }
+        }
+      }
+    },
+    "Review the command details before allowing.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "请先核对命令详情再决定是否允许。"
+          }
+        }
+      }
+    },
+    "Run": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "运行"
+          }
+        }
+      }
+    },
+    "Run Health Check": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "运行健康检查"
+          }
+        }
+      }
+    },
+    "Run Health Check Now": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "立即运行健康检查"
+          }
+        }
+      }
+    },
+    "Run OpenClaw agent?": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "运行 OpenClaw 助手？"
+          }
+        }
+      }
+    },
+    "Run history": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "运行历史"
+          }
+        }
+      }
+    },
+    "Run now": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "立即运行"
+          }
+        }
+      }
+    },
+    "Run the agent with this message?\n\n%@\n\nURL:\n%@": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "使用此消息运行助手？\n\n%@\n\nURL：\n%@"
+          }
+        }
+      }
+    },
+    "SSH check failed": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SSH 检查失败"
+          }
+        }
+      }
+    },
+    "SSH check failed (%@)": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SSH 检查失败（%@）"
+          }
+        }
+      }
+    },
+    "SSH check failed: %@": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SSH 检查失败：%@"
+          }
+        }
+      }
+    },
+    "SSH check failed: %@ (%@)": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SSH 检查失败：%@（%@）"
+          }
+        }
+      }
+    },
+    "SSH check failed: Host key verification failed. Remove the old key with ssh-keygen -R %@ and try again.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SSH 检查失败：主机密钥校验失败。请使用 ssh-keygen -R %@ 移除旧密钥后重试。"
+          }
+        }
+      }
+    },
+    "SSH target": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SSH 目标"
+          }
+        }
+      }
+    },
+    "SSH target cannot contain spaces": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SSH 目标不能包含空格"
+          }
+        }
+      }
+    },
+    "SSH target cannot start with '-'": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SSH 目标不能以 '-' 开头"
+          }
+        }
+      }
+    },
+    "SSH target must look like user@host[:port]": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SSH 目标格式应为 user@host[:port]"
+          }
+        }
+      }
+    },
+    "SSH tunnel": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SSH 隧道"
+          }
+        }
+      }
+    },
+    "SYSTEM_RUN_DENIED: allowlist miss": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SYSTEM_RUN_DENIED：不在允许清单中"
+          }
+        }
+      }
+    },
+    "SYSTEM_RUN_DENIED: environment override rejected (%@": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SYSTEM_RUN_DENIED：环境变量覆盖被拒绝（%@"
+          }
+        }
+      }
+    },
+    "SYSTEM_RUN_DENIED: user denied": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SYSTEM_RUN_DENIED：用户已拒绝"
+          }
+        }
+      }
+    },
+    "SYSTEM_RUN_DISABLED: security=deny": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SYSTEM_RUN_DISABLED：security=deny"
+          }
+        }
+      }
+    },
+    "Save": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保存"
+          }
+        }
+      }
+    },
+    "Save in config": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保存到配置"
+          }
+        }
+      }
+    },
+    "Saved to openclaw.json under skills.entries.%@": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已保存到 openclaw.json 的 skills.entries.%@"
+          }
+        }
+      }
+    },
+    "Saved to ~/.openclaw/openclaw.json (agents.defaults.workspace)": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已保存至 ~/.openclaw/openclaw.json（agents.defaults.workspace）"
+          }
+        }
+      }
+    },
+    "Scan or paste a fresh setup code from an already-paired OpenClaw client, then try again.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "从已配对的 OpenClaw 客户端扫描或粘贴新的配置码，然后重试。"
+          }
+        }
+      }
+    },
+    "Schedule": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "计划"
+          }
+        }
+      }
+    },
+    "Schema unavailable for this channel.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "此渠道的 Schema 不可用。"
+          }
+        }
+      }
+    },
+    "Schema unavailable.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schema 不可用。"
+          }
+        }
+      }
+    },
+    "Searching for nearby gateways…": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "正在搜索附近的 Gateway…"
+          }
+        }
+      }
+    },
+    "Seconds (optional)": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "秒（可选）"
+          }
+        }
+      }
+    },
+    "Security": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "安全"
+          }
+        }
+      }
+    },
+    "Security notice": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "安全提示"
+          }
+        }
+      }
+    },
+    "Select a channel to view status and settings.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "选择一个渠道查看状态与设置。"
+          }
+        }
+      }
+    },
+    "Select a config section to view settings.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "选择一个配置项查看设置。"
+          }
+        }
+      }
+    },
+    "Select a job to inspect details and run history.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "选择一个任务查看详情与运行历史。"
+          }
+        }
+      }
+    },
+    "Select a nearby gateway or open Advanced to enter a gateway URL.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "选择附近的 Gateway，或打开高级选项输入 Gateway URL。"
+          }
+        }
+      }
+    },
+    "Select a nearby gateway or open Advanced to enter an SSH target.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "选择附近的 Gateway，或打开高级选项输入 SSH 目标。"
+          }
+        }
+      }
+    },
+    "Select models.generated.ts": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "选择 models.generated.ts"
+          }
+        }
+      }
+    },
+    "Select…": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "选择…"
+          }
+        }
+      }
+    },
+    "Send Debug Voice Text": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "发送调试语音文本"
+          }
+        }
+      }
+    },
+    "Send Heartbeats": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "发送心跳"
+          }
+        }
+      }
+    },
+    "Send Test Heartbeat": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "发送测试心跳"
+          }
+        }
+      }
+    },
+    "Send Test Notification": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "发送测试通知"
+          }
+        }
+      }
+    },
+    "Send debug voice": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "发送调试语音"
+          }
+        }
+      }
+    },
+    "Send sound": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "发送提示音"
+          }
+        }
+      }
+    },
+    "Serve uses Tailscale identity headers; no password required.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Serve 使用 Tailscale 身份头；无需密码。"
+          }
+        }
+      }
+    },
+    "Session": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "会话"
+          }
+        }
+      }
+    },
+    "Session log not found": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "未找到会话日志"
+          }
+        }
+      }
+    },
+    "Session store lives on the gateway host in remote mode.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "远程模式下会话存储位于 Gateway 主机上。"
+          }
+        }
+      }
+    },
+    "Session store: %@ (%@ entries)": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "会话存储：%@（%@ 条）"
+          }
+        }
+      }
+    },
+    "Sessions": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "会话"
+          }
+        }
+      }
+    },
+    "Sessions unavailable": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "会话不可用"
+          }
+        }
+      }
+    },
+    "Set %@": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "设置 %@"
+          }
+        }
+      }
+    },
+    "Set API Key": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "设置 API 密钥"
+          }
+        }
+      }
+    },
+    "Set Environment Variable": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "设置环境变量"
+          }
+        }
+      }
+    },
+    "Settings": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "设置"
+          }
+        }
+      }
+    },
+    "Settings…": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "设置…"
+          }
+        }
+      }
+    },
+    "Setup Guide": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "设置指南"
+          }
+        }
+      }
+    },
+    "Setup Wizard": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "设置向导"
+          }
+        }
+      }
+    },
+    "Setup code expired or already used. Scan a fresh setup code, then try again.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "配置码已过期或已使用。请扫描新的配置码后重试。"
+          }
+        }
+      }
+    },
+    "Show Dock icon": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "显示 Dock 图标"
+          }
+        }
+      }
+    },
+    "Show QR": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "显示二维码"
+          }
+        }
+      }
+    },
+    "Show panel": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "显示面板"
+          }
+        }
+      }
+    },
+    "Show the Debug tab with development utilities.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "显示包含开发者工具的“调试”标签。"
+          }
+        }
+      }
+    },
+    "Skill CLIs: %@": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "技能 CLI：%@"
+          }
+        }
+      }
+    },
+    "Skill disabled": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "技能已禁用"
+          }
+        }
+      }
+    },
+    "Skill enabled": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "技能已启用"
+          }
+        }
+      }
+    },
+    "Skill: %@": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "技能：%@"
+          }
+        }
+      }
+    },
+    "Skills": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "技能"
+          }
+        }
+      }
+    },
+    "Skills are enabled when requirements are met (binaries, env, config).": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "当满足条件（可执行文件、环境变量、配置）时技能才启用。"
+          }
+        }
+      }
+    },
+    "Skills included": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "包含的技能"
+          }
+        }
+      }
+    },
+    "Snapshot": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "快照"
+          }
+        }
+      }
+    },
+    "Sounds": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "声音"
+          }
+        }
+      }
+    },
+    "Start Tailscale": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "启动 Tailscale"
+          }
+        }
+      }
+    },
+    "Start Tailscale to get your tailnet hostname.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "启动 Tailscale 以获取你的 tailnet 主机名。"
+          }
+        }
+      }
+    },
+    "Start test": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "开始测试"
+          }
+        }
+      }
+    },
+    "Starting wizard…": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "正在启动向导…"
+          }
+        }
+      }
+    },
+    "State:  %@": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "状态：  %@"
+          }
+        }
+      }
+    },
+    "Status": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "状态"
+          }
+        }
+      }
+    },
+    "Stdout / stderr": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "标准输出 / 标准错误"
+          }
+        }
+      }
+    },
+    "Stop": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "停止"
+          }
+        }
+      }
+    },
+    "Stop Talk Mode": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "停止对话模式"
+          }
+        }
+      }
+    },
+    "Stored in ~/.openclaw/openclaw.json. Prefer OPENCLAW_GATEWAY_PASSWORD for production.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "存储于 ~/.openclaw/openclaw.json。生产环境建议使用 OPENCLAW_GATEWAY_PASSWORD。"
+          }
+        }
+      }
+    },
+    "Subtitle": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "副标题"
+          }
+        }
+      }
+    },
+    "Summarize": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "总结"
+          }
+        }
+      }
+    },
+    "Summarize inbox": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "总结收件箱"
+          }
+        }
+      }
+    },
+    "Summary job": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "总结任务"
+          }
+        }
+      }
+    },
+    "System default": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "系统默认"
+          }
+        }
+      }
+    },
+    "System event text": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "系统事件文本"
+          }
+        }
+      }
+    },
+    "System events are injected into the current main session. Agent turns require an isolated session target.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "系统事件会注入到当前主会话。助手轮次需要独立的会话目标。"
+          }
+        }
+      }
+    },
+    "Tailnet-only HTTPS via Tailscale Serve.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "仅限 Tailnet 内部访问的 HTTPS（通过 Tailscale Serve）。"
+          }
+        }
+      }
+    },
+    "Tailscale (dashboard access)": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tailscale（控制面板访问）"
+          }
+        }
+      }
+    },
+    "Tailscale is installed but not running": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tailscale 已安装但未运行"
+          }
+        }
+      }
+    },
+    "Talk Mode": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "对话模式"
+          }
+        }
+      }
+    },
+    "Test": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "测试"
+          }
+        }
+      }
+    },
+    "Test Voice Wake": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "测试语音唤醒"
+          }
+        }
+      }
+    },
+    "Test description": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "测试描述"
+          }
+        }
+      }
+    },
+    "Test notification": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "测试通知"
+          }
+        }
+      }
+    },
+    "Test remote": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "测试远程"
+          }
+        }
+      }
+    },
+    "Testing…": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "测试中…"
+          }
+        }
+      }
+    },
+    "That token did not match the gateway": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "该令牌与 Gateway 不匹配"
+          }
+        }
+      }
+    },
+    "The current gateway.remote.token value is not plain text. OpenClaw for macOS cannot use it directly; enter a plaintext token here to replace it.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "当前 gateway.remote.token 的值不是明文。macOS 版 OpenClaw 无法直接使用；请在此处输入明文令牌以替换它。"
+          }
+        }
+      }
+    },
+    "These macOS permissions let OpenClaw automate apps and capture context on this Mac.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "这些 macOS 权限让 OpenClaw 能在此 Mac 上自动化操作应用并捕获上下文。"
+          }
+        }
+      }
+    },
+    "Thinking": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "思考"
+          }
+        }
+      }
+    },
+    "This Mac": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "此 Mac"
+          }
+        }
+      }
+    },
+    "This Mac is still using the temporary setup code. Approve pairing to finish provisioning device-scoped auth.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "此 Mac 仍在使用临时配置码。请批准配对以完成设备级认证配置。"
+          }
+        }
+      }
+    },
+    "This Mac used a stored device token. New or unpaired devices may still need the gateway token.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "此 Mac 使用了已存储的设备令牌。新设备或未配对设备可能仍需要 Gateway 令牌。"
+          }
+        }
+      }
+    },
+    "This device needs pairing approval": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "此设备需要配对批准"
+          }
+        }
+      }
+    },
+    "This gateway has token auth enabled, but no gateway.auth.token is configured on the host.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "此 Gateway 已启用令牌认证，但主机上未配置 gateway.auth.token。"
+          }
+        }
+      }
+    },
+    "This gateway host needs token setup": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "此 Gateway 主机需要设置令牌"
+          }
+        }
+      }
+    },
+    "This gateway is set to token auth, but no `gateway.auth.token` is configured on the gateway host. If the gateway uses an environment variable instead, set `OPENCLAW_GATEWAY_TOKEN` before starting the gateway.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "此 Gateway 已设为令牌认证，但 Gateway 主机上未配置 `gateway.auth.token`。如果 Gateway 改为使用环境变量，请在启动 Gateway 前设置 `OPENCLAW_GATEWAY_TOKEN`。"
+          }
+        }
+      }
+    },
+    "This gateway is using unsupported auth": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "此 Gateway 正在使用不支持的认证方式"
+          }
+        }
+      }
+    },
+    "This gateway requires an auth token": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "此 Gateway 需要认证令牌"
+          }
+        }
+      }
+    },
+    "This gateway requires an auth token from the gateway host.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "此 Gateway 需要来自 Gateway 主机的认证令牌。"
+          }
+        }
+      }
+    },
+    "This gateway uses password auth. Remote onboarding on macOS cannot collect gateway passwords yet.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "此 Gateway 使用密码认证。macOS 上的远程引导尚无法收集 Gateway 密码。"
+          }
+        }
+      }
+    },
+    "This onboarding flow does not support password auth yet. Reconfigure the gateway to use token auth, then retry.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "当前引导流程尚不支持密码认证。请将 Gateway 重新配置为令牌认证后重试。"
+          }
+        }
+      }
+    },
+    "This process looks expected for the current mode. Kill anyway?": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "该进程在当前模式下属于正常运行。仍要结束它吗？"
+          }
+        }
+      }
+    },
+    "This setup code is no longer valid": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "此配置码已失效"
+          }
+        }
+      }
+    },
+    "Timed out waiting for the control server; the gateway may be crashed or still starting.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "等待控制服务器超时；Gateway 可能已崩溃或仍在启动中。"
+          }
+        }
+      }
+    },
+    "Tip: enable Tailscale for stable remote access.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "提示：启用 Tailscale 以获得稳定的远程访问。"
+          }
+        }
+      }
+    },
+    "Tip: the session directory is returned by “Show panel”.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "提示：会话目录可通过“显示面板”查看。"
+          }
+        }
+      }
+    },
+    "Tip: use Tailscale Serve so the gateway has a valid HTTPS cert.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "提示：使用 Tailscale Serve 让 gateway 拥有有效的 HTTPS 证书。"
+          }
+        }
+      }
+    },
+    "Tip: use ‘New Job’ to add one, or enable cron in your gateway config.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "提示：使用“新建任务”来添加一个，或在 gateway 配置中启用 cron。"
+          }
+        }
+      }
+    },
+    "Today": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今天"
+          }
+        }
+      }
+    },
+    "Tools for diagnosing local issues (Gateway, ports, logs, Canvas).": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "用于诊断本地问题的工具（Gateway、端口、日志、Canvas）。"
+          }
+        }
+      }
+    },
+    "Transcript": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "转录记录"
+          }
+        }
+      }
+    },
+    "Transport": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "传输方式"
+          }
+        }
+      }
+    },
+    "Trigger Talk Mode": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "触发对话模式"
+          }
+        }
+      }
+    },
+    "Trigger sound": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "触发提示音"
+          }
+        }
+      }
+    },
+    "Trigger words": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "触发词"
+          }
+        }
+      }
+    },
+    "Try Voice Wake": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "试用语音唤醒"
+          }
+        }
+      }
+    },
+    "Twitter": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Twitter"
+          }
+        }
+      }
+    },
+    "UNAVAILABLE: node not ready": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "UNAVAILABLE：节点未就绪"
+          }
+        }
+      }
+    },
+    "Unpause OpenClaw to run agent actions.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "取消暂停 OpenClaw 以运行助手动作。"
+          }
+        }
+      }
+    },
+    "Unsaved changes": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "未保存的更改"
+          }
+        }
+      }
+    },
+    "Unsupported field type.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "不支持的字段类型。"
+          }
+        }
+      }
+    },
+    "Unsupported step type": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "不支持的步骤类型"
+          }
+        }
+      }
+    },
+    "Update password": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "更新密码"
+          }
+        }
+      }
+    },
+    "Update ready, restart now?": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "更新已准备就绪，是否立即重启？"
+          }
+        }
+      }
+    },
+    "Update thinking failed": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "更新思考等级失败"
+          }
+        }
+      }
+    },
+    "Update verbose failed": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "更新详细程度失败"
+          }
+        }
+      }
+    },
+    "Updates unavailable in this build.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "此版本不支持检查更新。"
+          }
+        }
+      }
+    },
+    "Usage": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "用量"
+          }
+        }
+      }
+    },
+    "Usage cost (30 days)": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "使用费用（30 天）"
+          }
+        }
+      }
+    },
+    "Use the panel + Canvas": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "使用菜单面板 + Canvas"
+          }
+        }
+      }
+    },
+    "Used by the CLI session loader; stored in ~/.openclaw/openclaw.json.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "供 CLI 会话加载器使用；存储于 ~/.openclaw/openclaw.json。"
+          }
+        }
+      }
+    },
+    "Used for pnpm/node fallback and PATH population when launching the gateway.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "用于启动 gateway 时的 pnpm/node 备选及 PATH 填充。"
+          }
+        }
+      }
+    },
+    "Used when the remote gateway requires token auth.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "当远程 gateway 需要令牌鉴权时使用。"
+          }
+        }
+      }
+    },
+    "Using existing gateway": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "使用现有 Gateway"
+          }
+        }
+      }
+    },
+    "Using existing gateway (%@)": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "使用现有 Gateway（%@）"
+          }
+        }
+      }
+    },
+    "Using existing gateway instance": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "使用现有的 gateway 实例"
+          }
+        }
+      }
+    },
+    "Verbose": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "详细"
+          }
+        }
+      }
+    },
+    "Verbosity": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "详细程度"
+          }
+        }
+      }
+    },
+    "Version": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "版本"
+          }
+        }
+      }
+    },
+    "Version %@": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "版本 %@"
+          }
+        }
+      }
+    },
+    "Voice Wake": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "语音唤醒"
+          }
+        }
+      }
+    },
+    "Voice Wake requires macOS 26 or newer.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "语音唤醒需要 macOS 26 或更新版本。"
+          }
+        }
+      }
+    },
+    "Voice wake detected!": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已检测到语音唤醒！"
+          }
+        }
+      }
+    },
+    "Waiting for wizard…": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "正在等待向导…"
+          }
+        }
+      }
+    },
+    "Wake": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "唤醒"
+          }
+        }
+      }
+    },
+    "Wake word": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "唤醒词"
+          }
+        }
+      }
+    },
+    "Website": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "官网"
+          }
+        }
+      }
+    },
+    "Welcome to OpenClaw": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "欢迎使用 OpenClaw"
+          }
+        }
+      }
+    },
+    "What should OpenClaw do?": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OpenClaw 应该做什么？"
+          }
+        }
+      }
+    },
+    "While Using": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "使用期间"
+          }
+        }
+      }
+    },
+    "Why this presence entry was last updated (debug marker).": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "此在线状态条目最近更新的原因（调试标记）。"
+          }
+        }
+      }
+    },
+    "Why this presence entry was last updated (debug marker). Raw: %@": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "此在线状态条目最近更新的原因（调试标记）。原始值：%@"
+          }
+        }
+      }
+    },
+    "Wizard complete. Continue to the next step.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "向导已完成。继续下一步。"
+          }
+        }
+      }
+    },
+    "Wizard error": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "向导出错"
+          }
+        }
+      }
+    },
+    "Working directory": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "工作目录"
+          }
+        }
+      }
+    },
+    "Workspace folder": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "工作区文件夹"
+          }
+        }
+      }
+    },
+    "Write rolling diagnostics log (JSONL)": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "写入滚动诊断日志（JSONL）"
+          }
+        }
+      }
+    },
+    "Write sample page": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "写入示例页面"
+          }
+        }
+      }
+    },
+    "Writes a rotating, local-only log under ~/Library/Logs/OpenClaw/. ": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在 ~/Library/Logs/OpenClaw/ 下写入滚动的本地日志。"
+          }
+        }
+      }
+    },
+    "Yes": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "是"
+          }
+        }
+      }
+    },
+    "after success": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "成功后"
+          }
+        }
+      }
+    },
+    "at": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "于"
+          }
+        }
+      }
+    },
+    "cron": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "定时任务"
+          }
+        }
+      }
+    },
+    "current": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "当前"
+          }
+        }
+      }
+    },
+    "e.g. 0 9 * * 3": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "例如 0 9 * * 3"
+          }
+        }
+      }
+    },
+    "eval → %@": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "eval → %@"
+          }
+        }
+      }
+    },
+    "every": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "每"
+          }
+        }
+      }
+    },
+    "isolated": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "隔离"
+          }
+        }
+      }
+    },
+    "main": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "主"
+          }
+        }
+      }
+    },
+    "next-heartbeat": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "下次心跳"
+          }
+        }
+      }
+    },
+    "now": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "现在"
+          }
+        }
+      }
+    },
+    "openclaw CLI not found in PATH; install the CLI.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在 PATH 中未找到 openclaw CLI；请先安装 CLI。"
+          }
+        }
+      }
+    },
+    "remote gateway auth token (gateway.remote.token)": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "远程 gateway 鉴权令牌（gateway.remote.token）"
+          }
+        }
+      }
+    },
+    "snapshot → %@": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "snapshot → %@"
+          }
+        }
+      }
+    },
+    "user@host[:22]": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "user@host[:22]"
+          }
+        }
+      }
+    },
+    "user@host[:port]": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "user@host[:port]"
+          }
+        }
+      }
+    },
+    "© 2025 Peter Steinberger — MIT License.": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "© 2025 Peter Steinberger — MIT 许可证。"
+          }
+        }
+      }
+    },
+    "简体中文": {
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "简体中文"
+          }
+        }
+      }
+    }
+  }
+}
