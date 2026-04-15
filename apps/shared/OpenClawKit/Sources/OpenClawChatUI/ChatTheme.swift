@@ -50,35 +50,7 @@ enum OpenClawChatTheme {
     @ViewBuilder
     static var background: some View {
         #if os(macOS)
-        ZStack {
-            Rectangle()
-                .fill(.ultraThinMaterial)
-            LinearGradient(
-                colors: [
-                    Color.white.opacity(0.12),
-                    Color(nsColor: .windowBackgroundColor).opacity(0.35),
-                    Color.black.opacity(0.35),
-                ],
-                startPoint: .topLeading,
-                endPoint: .bottomTrailing)
-            RadialGradient(
-                colors: [
-                    Color(nsColor: .systemOrange).opacity(0.14),
-                    .clear,
-                ],
-                center: .topLeading,
-                startRadius: 40,
-                endRadius: 320)
-            RadialGradient(
-                colors: [
-                    Color(nsColor: .systemTeal).opacity(0.12),
-                    .clear,
-                ],
-                center: .topTrailing,
-                startRadius: 40,
-                endRadius: 280)
-            Color.black.opacity(0.08)
-        }
+        Color(nsColor: .textBackgroundColor)
         #else
         Color(uiColor: .systemBackground)
         #endif
