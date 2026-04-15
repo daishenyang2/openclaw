@@ -168,7 +168,18 @@ public struct OpenClawChatView: View {
                 self.scrollPosition = self.scrollerBottomID
             }
         }
-        .onChange(of: self.viewModel.messages.count) { _, _ in
+        .onChange(of: self.viewModel.messages.count) { _, newCount in
+            // Initial-scroll fallback: if messages appear without an
+            // isLoading transition (cached VM, streaming updates, etc.),
+            // pin the scroll to the bottom the first time content exists.
+            if !self.hasPerformedInitialScroll, newCount > 0 {
+                DispatchQueue.main.async {
+                    self.scrollPosition = self.scrollerBottomID
+                    self.hasPerformedInitialScroll = true
+                    self.isPinnedToBottom = true
+                }
+                return
+            }
             guard self.hasPerformedInitialScroll else { return }
             if let lastMessage = self.viewModel.messages.last,
                lastMessage.role.lowercased() == "user",

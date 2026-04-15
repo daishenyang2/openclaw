@@ -108,7 +108,6 @@ struct CoworkMainWindowView: View {
     @State private var sessions: [OpenClawChatSessionEntry] = []
     @State private var sessionPreviews: [String: SessionMenuPreviewSnapshot] = [:]
     @State private var viewModelCache: [String: OpenClawChatViewModel] = [:]
-    @State private var lastActiveSessionKey: String?
     @State private var sidebarQuery = ""
     @State private var isLoadingSessions = false
     @State private var isCreatingTask = false
@@ -165,13 +164,6 @@ struct CoworkMainWindowView: View {
         .background(CoworkPalette.background)
         .preferredColorScheme(self.themeStore.preference.colorScheme)
         .task { await self.refreshSessions() }
-        .onChange(of: self.tabs.selectedTabID) { _, _ in
-            if let key = self.tabs.selectedSessionKey {
-                // Drop the cached VM so ChatView rebuilds its initial
-                // scroll cycle with a freshly-loading VM.
-                self.viewModelCache.removeValue(forKey: key)
-            }
-        }
         .onReceive(NotificationCenter.default.publisher(for: .coworkNewTaskRequested)) { _ in
             Task { await self.createTask() }
         }
