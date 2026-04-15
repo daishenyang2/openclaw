@@ -293,7 +293,9 @@ private struct ChatMessageBody: View {
         if self.style == .onboarding {
             return OpenClawChatTheme.onboardingAssistantBubble
         }
-        return OpenClawChatTheme.assistantBubble
+        // Cowork-style: assistant replies render as plain text with no
+        // bubble chrome, matching the main window's clean content surface.
+        return .clear
     }
 
     private var bubbleBackground: AnyShapeStyle {
@@ -302,18 +304,18 @@ private struct ChatMessageBody: View {
 
     private var bubbleBorderColor: Color {
         if self.isUser {
-            return Color.white.opacity(0.12)
+            return Color.primary.opacity(0.08)
         }
         if self.style == .onboarding {
             return OpenClawChatTheme.onboardingAssistantBorder
         }
-        return Color.white.opacity(0.08)
+        return .clear
     }
 
     private var bubbleBorderWidth: CGFloat {
         if self.isUser { return 0.5 }
         if self.style == .onboarding { return 0.8 }
-        return 1
+        return 0
     }
 
     private var bubbleBorder: some View {
@@ -479,14 +481,22 @@ struct ChatTypingIndicatorBubble: View {
             TypingDots()
             Spacer(minLength: 0)
         }
-        .padding(.vertical, self.style == .standard ? 12 : 10)
-        .padding(.horizontal, self.style == .standard ? 12 : 14)
+        .padding(.vertical, self.style == .standard ? 6 : 10)
+        .padding(.horizontal, self.style == .standard ? 0 : 14)
         .background(
-            RoundedRectangle(cornerRadius: 16, style: .continuous)
-                .fill(OpenClawChatTheme.assistantBubble))
+            Group {
+                if self.style == .onboarding {
+                    RoundedRectangle(cornerRadius: 16, style: .continuous)
+                        .fill(OpenClawChatTheme.assistantBubble)
+                }
+            })
         .overlay(
-            RoundedRectangle(cornerRadius: 16, style: .continuous)
-                .strokeBorder(Color.white.opacity(0.08), lineWidth: 1))
+            Group {
+                if self.style == .onboarding {
+                    RoundedRectangle(cornerRadius: 16, style: .continuous)
+                        .strokeBorder(Color.primary.opacity(0.08), lineWidth: 1)
+                }
+            })
         .frame(maxWidth: ChatUIConstants.bubbleMaxWidth, alignment: .leading)
         .focusable(false)
     }
