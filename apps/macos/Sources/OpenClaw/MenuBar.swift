@@ -90,6 +90,18 @@ struct OpenClawApp: App {
             self.updateStatusHighlight()
             self.updateHoverHUDSuppression()
         }
+
+        WindowGroup("OpenClaw", id: "cowork-main") {
+            CoworkMainWindowView()
+                .onAppear {
+                    NSApp.setActivationPolicy(.regular)
+                }
+        }
+        .defaultSize(width: 1200, height: 800)
+        .windowResizability(.contentSize)
+        .commands {
+            CommandGroup(replacing: .newItem) { }
+        }
     }
 
     private func applyStatusItemAppearance(paused: Bool, sleeping: Bool) {
