@@ -9,14 +9,17 @@ import UniformTypeIdentifiers
 // MARK: - Palette
 
 enum CoworkPalette {
-    static let background = Color(nsColor: NSColor.windowBackgroundColor)
-    static let surface = Color(nsColor: NSColor.controlBackgroundColor)
-    static let surfaceElevated = Color(nsColor: NSColor.underPageBackgroundColor)
-    static let hairline = Color.gray.opacity(0.18)
+    static let background = Color(nsColor: NSColor.textBackgroundColor)
+    static let surface = Color.primary.opacity(0.03)
+    static let surfaceElevated = Color.primary.opacity(0.05)
+    static let hairline = Color.primary.opacity(0.08)
     static let accent = Color.accentColor
     static let working = Color.orange
     static let success = Color.green
     static let muted = Color.secondary
+    /// Warm peach tint for user chat bubbles; keeps contrast in both light
+    /// and dark mode while avoiding the heavy accent-color fill.
+    static let userBubble = Color(red: 0.99, green: 0.91, blue: 0.82).opacity(0.55)
 }
 
 // MARK: - Focus
@@ -683,7 +686,7 @@ struct CoworkTaskDetailView: View {
                     viewModel: viewModel,
                     showsSessionSwitcher: false,
                     style: .standard,
-                    userAccent: Color(nsColor: NSColor.unemphasizedSelectedContentBackgroundColor),
+                    userAccent: CoworkPalette.userBubble,
                     showsAssistantTrace: true)
                     .id(viewModel.sessionKey)
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
