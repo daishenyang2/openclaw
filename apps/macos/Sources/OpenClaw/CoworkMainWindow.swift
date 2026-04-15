@@ -674,11 +674,7 @@ struct CoworkTaskDetailView: View {
             Divider().overlay(CoworkPalette.hairline)
 
             if let viewModel = self.viewModel {
-                OpenClawChatView(
-                    viewModel: viewModel,
-                    showsSessionSwitcher: false,
-                    style: .standard,
-                    showsAssistantTrace: true)
+                CoworkChatPane(viewModel: viewModel)
                     .id(viewModel.sessionKey)
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
             } else {
@@ -687,6 +683,65 @@ struct CoworkTaskDetailView: View {
             }
         }
         .background(CoworkPalette.background)
+    }
+}
+
+/// Wraps `OpenClawChatView` with explicit loading / empty / visible-content
+/// states so a blank middle pane can never silently happen. Any time the
+/// wrapped chat view has not yet produced a first frame (initial bootstrap,
+/// pre-loaded but not yet laid out, or an all-filtered transcript) we
+/// surface a placeholder instead of a blank canvas. Also tries to force the
+/// view model's bootstrap again if messages are empty, so a stuck tab can
+/// recover.
+struct CoworkChatPane: View {
+    let viewModel: OpenClawChatViewModel
+    @State private var retryToken = 0
+    @State private var lastBootstrapKick = Date()
+
+    var body: some View {
+        ZStack {
+            OpenClawChatView(
+                viewModel: self.viewModel,
+                showsSessionSwitcher: false,
+                style: .standard,
+                showsAssistantTrace: true)
+
+            if self.viewModel.isLoading, self.viewModel.messages.isEmpty {
+                VStack(spacing: 12) {
+                    ProgressView().controlSize(.large)
+                    Text("正在加载会话…")
+                        .font(.callout)
+                        .foregroundStyle(.secondary)
+                }
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .background(Color(nsColor: NSColor.textBackgroundColor))
+            } else if self.viewModel.messages.isEmpty {
+                VStack(spacing: 12) {
+                    Image(systemName: "bubble.left.and.bubble.right")
+                        .font(.system(size: 36))
+                        .foregroundStyle(.tertiary)
+                    Text("这个会话暂时没有消息")
+                        .font(.callout)
+                        .foregroundStyle(.secondary)
+                    Button("重新加载") {
+                        self.viewModel.refresh()
+                        self.retryToken &+= 1
+                    }
+                    .buttonStyle(.bordered)
+                }
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .background(Color(nsColor: NSColor.textBackgroundColor))
+            }
+        }
+        .task(id: self.viewModel.sessionKey) {
+            // Kick bootstrap on session mount. OpenClawChatView.onAppear
+            // already calls load(), but .id-based remounts can race so we
+            // trigger a refresh here too if messages never arrive.
+            try? await Task.sleep(nanoseconds: 250_000_000)
+            if self.viewModel.messages.isEmpty, !self.viewModel.isLoading {
+                self.viewModel.refresh()
+            }
+        }
     }
 }
 
