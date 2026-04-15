@@ -683,6 +683,7 @@ struct CoworkTaskDetailView: View {
                     viewModel: viewModel,
                     showsSessionSwitcher: false,
                     style: .standard,
+                    userAccent: Color(nsColor: NSColor.unemphasizedSelectedContentBackgroundColor),
                     showsAssistantTrace: true)
                     .id(viewModel.sessionKey)
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
