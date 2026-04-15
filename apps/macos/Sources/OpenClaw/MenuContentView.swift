@@ -114,10 +114,7 @@ struct MenuContent: View {
                 Label("Open Dashboard", systemImage: "gauge")
             }
             Button {
-                Task { @MainActor in
-                    let sessionKey = await WebChatManager.shared.preferredSessionKey()
-                    WebChatManager.shared.show(sessionKey: sessionKey)
-                }
+                CoworkWindowOpener.openMainWindow()
             } label: {
                 Label("Open Chat", systemImage: "bubble.left.and.bubble.right")
             }

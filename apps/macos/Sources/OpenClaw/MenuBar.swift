@@ -310,6 +310,13 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
             CLIInstallPrompter.shared.checkAndPromptIfNeeded(reason: "launch")
         }
 
+        // Always surface the Cowork main window on launch so the desktop app
+        // behaves like a regular macOS app (user can close it and reopen via
+        // Dock, menu bar, or ⌘N).
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+            CoworkWindowOpener.openMainWindow()
+        }
+
         // Developer/testing helper: auto-open chat when launched with --chat (or legacy --webchat).
         if CommandLine.arguments.contains("--chat") || CommandLine.arguments.contains("--webchat") {
             self.webChatAutoLogger.debug("Auto-opening chat via CLI flag")
@@ -350,6 +357,14 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         guard let bundleID = Bundle.main.bundleIdentifier else { return false }
         let running = NSWorkspace.shared.runningApplications.filter { $0.bundleIdentifier == bundleID }
         return running.count > 1
+    }
+
+    @MainActor
+    func applicationShouldHandleReopen(_: NSApplication, hasVisibleWindows flag: Bool) -> Bool {
+        if !flag {
+            CoworkWindowOpener.openMainWindow()
+        }
+        return true
     }
 }
 
