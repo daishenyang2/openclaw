@@ -143,12 +143,14 @@ public struct OpenClawChatView: View {
             self.isPinnedToBottom = true
         }
         .task(id: self.viewModel.sessionKey) {
-            // Fallback: when a pre-loaded view model is attached (e.g. tab
-            // switch reusing cached messages), the isLoading transition
-            // never fires, so pin the scroll to the bottom on first mount
-            // regardless of the loading state.
-            try? await Task.sleep(nanoseconds: 60_000_000)
-            if !self.viewModel.messages.isEmpty, !self.hasPerformedInitialScroll {
+            // Retry scroll-to-bottom a few times as content streams in and
+            // LazyVStack finishes layout. Necessary for heavy sessions
+            // whose first render finishes after the single isLoading edge.
+            for delayMs in [50, 150, 400, 900, 1500] {
+                try? await Task.sleep(nanoseconds: UInt64(delayMs) * 1_000_000)
+                if Task.isCancelled { return }
+                if self.hasPerformedInitialScroll { return }
+                if self.viewModel.messages.isEmpty { continue }
                 await MainActor.run {
                     self.scrollPosition = self.scrollerBottomID
                     self.hasPerformedInitialScroll = true
