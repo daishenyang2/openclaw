@@ -108,6 +108,7 @@ struct CoworkMainWindowView: View {
     @State private var sessions: [OpenClawChatSessionEntry] = []
     @State private var sessionPreviews: [String: SessionMenuPreviewSnapshot] = [:]
     @State private var viewModelCache: [String: OpenClawChatViewModel] = [:]
+    @State private var lastActiveSessionKey: String?
     @State private var sidebarQuery = ""
     @State private var isLoadingSessions = false
     @State private var isCreatingTask = false
@@ -196,6 +197,15 @@ struct CoworkMainWindowView: View {
 
     private func currentViewModel() -> OpenClawChatViewModel? {
         guard let key = self.tabs.selectedSessionKey else { return nil }
+        // When switching to a new active tab, drop the previously-cached
+        // view model so the freshly-built ChatView sees an isLoading ->
+        // loaded transition and its initial scroll-to-bottom fires. Reusing
+        // a warm VM left messages visible above the initial scroll position
+        // until the user moved the wheel.
+        if self.lastActiveSessionKey != key {
+            self.lastActiveSessionKey = key
+            self.viewModelCache.removeValue(forKey: key)
+        }
         if let existing = self.viewModelCache[key] { return existing }
         let vm = OpenClawChatViewModel(sessionKey: key, transport: self.transport)
         self.viewModelCache[key] = vm
