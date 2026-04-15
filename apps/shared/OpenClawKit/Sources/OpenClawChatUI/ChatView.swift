@@ -142,6 +142,20 @@ public struct OpenClawChatView: View {
             self.hasPerformedInitialScroll = true
             self.isPinnedToBottom = true
         }
+        .task(id: self.viewModel.sessionKey) {
+            // Fallback: when a pre-loaded view model is attached (e.g. tab
+            // switch reusing cached messages), the isLoading transition
+            // never fires, so pin the scroll to the bottom on first mount
+            // regardless of the loading state.
+            try? await Task.sleep(nanoseconds: 60_000_000)
+            if !self.viewModel.messages.isEmpty, !self.hasPerformedInitialScroll {
+                await MainActor.run {
+                    self.scrollPosition = self.scrollerBottomID
+                    self.hasPerformedInitialScroll = true
+                    self.isPinnedToBottom = true
+                }
+            }
+        }
         .onChange(of: self.viewModel.sessionKey) { _, _ in
             self.hasPerformedInitialScroll = false
             self.isPinnedToBottom = true

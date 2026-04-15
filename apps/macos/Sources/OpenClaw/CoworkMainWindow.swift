@@ -165,6 +165,13 @@ struct CoworkMainWindowView: View {
         .background(CoworkPalette.background)
         .preferredColorScheme(self.themeStore.preference.colorScheme)
         .task { await self.refreshSessions() }
+        .onChange(of: self.tabs.selectedTabID) { _, _ in
+            if let key = self.tabs.selectedSessionKey {
+                // Drop the cached VM so ChatView rebuilds its initial
+                // scroll cycle with a freshly-loading VM.
+                self.viewModelCache.removeValue(forKey: key)
+            }
+        }
         .onReceive(NotificationCenter.default.publisher(for: .coworkNewTaskRequested)) { _ in
             Task { await self.createTask() }
         }
@@ -197,15 +204,6 @@ struct CoworkMainWindowView: View {
 
     private func currentViewModel() -> OpenClawChatViewModel? {
         guard let key = self.tabs.selectedSessionKey else { return nil }
-        // When switching to a new active tab, drop the previously-cached
-        // view model so the freshly-built ChatView sees an isLoading ->
-        // loaded transition and its initial scroll-to-bottom fires. Reusing
-        // a warm VM left messages visible above the initial scroll position
-        // until the user moved the wheel.
-        if self.lastActiveSessionKey != key {
-            self.lastActiveSessionKey = key
-            self.viewModelCache.removeValue(forKey: key)
-        }
         if let existing = self.viewModelCache[key] { return existing }
         let vm = OpenClawChatViewModel(sessionKey: key, transport: self.transport)
         self.viewModelCache[key] = vm
