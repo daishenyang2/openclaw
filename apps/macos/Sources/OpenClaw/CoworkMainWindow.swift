@@ -861,7 +861,6 @@ struct CoworkArtifactsPane: View {
             VStack(alignment: .leading, spacing: 16) {
                 CoworkPlanDetailCard(viewModel: self.viewModel)
                 CoworkArtifactsCard(artifacts: self.artifacts, hasSession: self.viewModel != nil)
-                CoworkNotesCard(sessionKey: self.viewModel?.sessionKey)
                 CoworkActivityCard(viewModel: self.viewModel)
                 Spacer(minLength: 0)
             }
