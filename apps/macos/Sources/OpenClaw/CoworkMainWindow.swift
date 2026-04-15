@@ -671,14 +671,6 @@ struct CoworkTaskDetailView: View {
                 onExport: self.onExport)
                 .padding(.horizontal, 22).padding(.top, 18).padding(.bottom, 12)
 
-            if let viewModel = self.viewModel {
-                let steps = CoworkPlanExtractor.extractPlanSteps(from: viewModel)
-                if !steps.isEmpty {
-                    CoworkInlinePlanBar(steps: steps)
-                        .padding(.horizontal, 22).padding(.bottom, 10)
-                }
-            }
-
             Divider().overlay(CoworkPalette.hairline)
 
             if let viewModel = self.viewModel {
