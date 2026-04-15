@@ -713,7 +713,7 @@ struct CoworkTaskHeader: View {
 
     private var statusPill: (String, Color, String) {
         if self.viewModel == nil { return ("等待会话", CoworkPalette.muted, "moon") }
-        if self.isWorking { return ("Claude 正在工作", CoworkPalette.working, "sparkles") }
+        if self.isWorking { return ("正在工作", CoworkPalette.working, "sparkles") }
         return ("就绪", CoworkPalette.success, "checkmark.circle.fill")
     }
 
@@ -1069,26 +1069,64 @@ struct CoworkActivityCard: View {
         guard let vm = self.viewModel else { return [] }
         var out: [Entry] = []
         for call in vm.pendingToolCalls {
+            let args = call.args?.value as? [String: AnyCodable]
             out.append(
                 Entry(id: "pending-\(call.toolCallId)",
                       icon: call.isError == true ? "exclamationmark.triangle.fill" : "wrench.adjustable.fill",
                       tint: call.isError == true ? .red : CoworkPalette.working,
                       title: call.name,
-                      subtitle: "进行中",
+                      subtitle: Self.describe(toolName: call.name, args: args) ?? "进行中",
                       timestamp: call.startedAt))
         }
         for msg in vm.messages.suffix(16).reversed() {
             for block in msg.content where (block.type == "tool_use" || block.type == "toolCall" || block.type == "tool_call") {
+                let args = block.arguments?.value as? [String: AnyCodable]
                 out.append(
                     Entry(id: "tool-\(msg.id.uuidString)-\(block.id ?? block.name ?? UUID().uuidString)",
                           icon: "wrench.and.screwdriver",
                           tint: CoworkPalette.accent,
                           title: block.name ?? "tool",
-                          subtitle: nil,
+                          subtitle: Self.describe(toolName: block.name, args: args),
                           timestamp: msg.timestamp))
             }
         }
         return out
+    }
+
+    /// Extract a short human-readable detail line from the tool arguments.
+    /// Falls back to the first string value so even unknown tools surface
+    /// more context than the bare tool name.
+    private static func describe(toolName: String?, args: [String: AnyCodable]?) -> String? {
+        guard let args, !args.isEmpty else { return nil }
+        let preferredKeys: [String]
+        switch toolName {
+        case "read", "read_file": preferredKeys = ["path", "file", "file_path"]
+        case "write", "write_file": preferredKeys = ["path", "file", "file_path"]
+        case "edit", "apply_patch": preferredKeys = ["path", "file", "file_path"]
+        case "exec", "bash", "shell": preferredKeys = ["command", "cmd", "script"]
+        case "search", "grep", "rg": preferredKeys = ["pattern", "query", "text"]
+        case "glob", "ls", "find": preferredKeys = ["pattern", "path"]
+        case "update_plan": preferredKeys = ["explanation"]
+        case "web_fetch", "fetch", "http": preferredKeys = ["url"]
+        default:
+            preferredKeys = ["path", "file", "command", "query", "url", "pattern", "name"]
+        }
+        for key in preferredKeys {
+            if let value = args[key]?.value as? String, !value.isEmpty {
+                return Self.truncate(value, max: 60)
+            }
+        }
+        for (_, v) in args {
+            if let s = v.value as? String, !s.isEmpty {
+                return Self.truncate(s, max: 60)
+            }
+        }
+        return nil
+    }
+
+    private static func truncate(_ s: String, max: Int) -> String {
+        guard s.count > max else { return s }
+        return "…" + String(s.suffix(max - 1))
     }
 
     var body: some View {
@@ -1107,16 +1145,20 @@ struct CoworkActivityCard: View {
                                 .foregroundStyle(entry.tint)
                                 .frame(width: 22, alignment: .leading)
                             VStack(alignment: .leading, spacing: 2) {
-                                Text(entry.title).font(.callout.monospaced())
-                                    .lineLimit(1).truncationMode(.middle)
                                 HStack(spacing: 6) {
-                                    if let sub = entry.subtitle {
-                                        Text(sub).font(.caption2).foregroundStyle(.secondary)
-                                    }
+                                    Text(entry.title).font(.callout.monospaced())
+                                        .lineLimit(1).truncationMode(.middle)
                                     if let ts = entry.timestamp {
                                         Text(Self.formatRelative(ms: ts))
                                             .font(.caption2).foregroundStyle(.tertiary)
                                     }
+                                }
+                                if let sub = entry.subtitle {
+                                    Text(sub)
+                                        .font(.caption.monospaced())
+                                        .foregroundStyle(.secondary)
+                                        .lineLimit(2)
+                                        .truncationMode(.middle)
                                 }
                             }
                             Spacer(minLength: 0)
