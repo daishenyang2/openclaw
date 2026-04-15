@@ -1078,12 +1078,13 @@ struct CoworkActivityCard: View {
                       subtitle: Self.describe(toolName: call.name, args: args) ?? "进行中",
                       timestamp: call.startedAt))
         }
-        // Only show tool calls from the most recent assistant turn so the
-        // activity card tracks the current run instead of accumulating
-        // history from hours ago.
-        let recentCutoffMs = Date().timeIntervalSince1970 * 1000 - (5 * 60 * 1000)
-        for msg in vm.messages.suffix(6).reversed() {
-            if let ts = msg.timestamp, ts < recentCutoffMs { break }
+        // Only surface tool calls from the current turn — everything after
+        // the most recent user-authored message (or all messages if the
+        // user has never sent anything in this session). Avoid gateway
+        // infrastructure pseudo-user turns such as "System: [...] reason
+        // launch" which don't correspond to real user input.
+        let turnMessages = Self.currentTurnMessages(vm.messages)
+        for msg in turnMessages.reversed() {
             for block in msg.content where (block.type == "tool_use" || block.type == "toolCall" || block.type == "tool_call") {
                 let args = block.arguments?.value as? [String: AnyCodable]
                 out.append(
@@ -1096,6 +1097,34 @@ struct CoworkActivityCard: View {
             }
         }
         return out
+    }
+
+    /// Slice the message list to just the messages that belong to the
+    /// current turn: everything after the most recent real user message.
+    /// Gateway-injected system pseudo-user turns are treated like
+    /// assistant/tool noise and do not reset the turn.
+    private static func currentTurnMessages(_ messages: [OpenClawChatMessage]) -> [OpenClawChatMessage] {
+        for index in messages.indices.reversed() {
+            let msg = messages[index]
+            guard msg.role.lowercased() == "user" else { continue }
+            let text = msg.content.compactMap { $0.text }.joined(separator: " ")
+                .trimmingCharacters(in: .whitespacesAndNewlines)
+            // Skip gateway-injected pseudo-user turns (heartbeat reason /
+            // exec completion notices) so the turn boundary tracks real
+            // user input.
+            let isSystemPseudoUser =
+                text.hasPrefix("System: [") ||
+                text.hasPrefix("System (untrusted): [") ||
+                text.contains("reason launch") ||
+                text.contains("reason connect") ||
+                text.contains("reason instances-refresh") ||
+                text.contains("Exec completed")
+            if isSystemPseudoUser { continue }
+            let after = index + 1
+            if after >= messages.count { return [] }
+            return Array(messages[after...])
+        }
+        return messages
     }
 
     /// Extract a short human-readable detail line from the tool arguments.
