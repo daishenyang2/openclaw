@@ -684,6 +684,7 @@ struct CoworkTaskDetailView: View {
                     showsSessionSwitcher: false,
                     style: .standard,
                     showsAssistantTrace: true)
+                    .id(viewModel.sessionKey)
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
             } else {
                 CoworkEmptyChatPlaceholder()
