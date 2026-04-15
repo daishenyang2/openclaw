@@ -429,6 +429,32 @@ public struct OpenClawChatView: View {
         return role == "toolresult" || role == "tool_result"
     }
 
+    private static func isGatewayInfrastructureNoise(_ text: String) -> Bool {
+        let stripped = text.trimmingCharacters(in: .whitespacesAndNewlines)
+        // Gateway-injected system notices used to be threaded in as fake
+        // user turns so the agent can observe them. They follow stable
+        // patterns:
+        //   System: [timestamp] Node: ... · reason launch
+        //   System: [timestamp] reason connect ...
+        //   System (untrusted): [timestamp] Exec completed ...
+        //   System: [timestamp] reason instances-refresh
+        // Match the lead-in tokens so we don't accidentally hide legitimate
+        // user prose that happens to mention the word "System".
+        let prefixes = [
+            "System: [",
+            "System (untrusted): [",
+        ]
+        guard prefixes.contains(where: { stripped.hasPrefix($0) }) else { return false }
+        let reasonMarkers = [
+            "reason launch",
+            "reason connect",
+            "reason instances-refresh",
+            "Exec completed",
+            "Node:",
+        ]
+        return reasonMarkers.contains(where: { stripped.contains($0) })
+    }
+
     private func shouldDisplayMessage(_ message: OpenClawChatMessage) -> Bool {
         if self.hasInlineAttachments(in: message) {
             return true
@@ -437,6 +463,14 @@ public struct OpenClawChatView: View {
         let primaryText = self.primaryText(in: message)
         if !primaryText.isEmpty {
             if message.role.lowercased() == "user" {
+                // Hide gateway-injected infrastructure events (heartbeat
+                // reason launch / reason connect, async exec completion
+                // notices) that the gateway threads into the transcript as
+                // fake user turns. They're useful for the agent but noise
+                // in the chat surface.
+                if Self.isGatewayInfrastructureNoise(primaryText) {
+                    return false
+                }
                 return true
             }
             if AssistantTextParser.hasVisibleContent(in: primaryText, includeThinking: self.showsAssistantTrace) {

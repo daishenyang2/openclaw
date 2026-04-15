@@ -1078,7 +1078,12 @@ struct CoworkActivityCard: View {
                       subtitle: Self.describe(toolName: call.name, args: args) ?? "进行中",
                       timestamp: call.startedAt))
         }
-        for msg in vm.messages.suffix(16).reversed() {
+        // Only show tool calls from the most recent assistant turn so the
+        // activity card tracks the current run instead of accumulating
+        // history from hours ago.
+        let recentCutoffMs = Date().timeIntervalSince1970 * 1000 - (5 * 60 * 1000)
+        for msg in vm.messages.suffix(6).reversed() {
+            if let ts = msg.timestamp, ts < recentCutoffMs { break }
             for block in msg.content where (block.type == "tool_use" || block.type == "toolCall" || block.type == "tool_call") {
                 let args = block.arguments?.value as? [String: AnyCodable]
                 out.append(
