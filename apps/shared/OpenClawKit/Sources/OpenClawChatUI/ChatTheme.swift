@@ -72,8 +72,22 @@ enum OpenClawChatTheme {
         #endif
     }
 
+    #if os(macOS)
+    static let userBubbleDynamicNSColor = NSColor(
+        name: NSColor.Name("OpenClawChatTheme.userBubble"),
+        dynamicProvider: { appearance in
+            appearance.isDarkAqua
+                ? NSColor(calibratedRed: 0.32, green: 0.26, blue: 0.20, alpha: 1.0)
+                : NSColor(calibratedRed: 1.00, green: 0.93, blue: 0.86, alpha: 1.0)
+        })
+    #endif
+
     static var userBubble: Color {
-        Color(red: 127 / 255.0, green: 184 / 255.0, blue: 212 / 255.0)
+        #if os(macOS)
+        Color(nsColor: self.userBubbleDynamicNSColor)
+        #else
+        Color(red: 1.00, green: 0.93, blue: 0.86)
+        #endif
     }
 
     static var assistantBubble: Color {
@@ -100,7 +114,13 @@ enum OpenClawChatTheme {
         #endif
     }
 
-    static var userText: Color { .white }
+    static var userText: Color {
+        #if os(macOS)
+        Color(nsColor: .labelColor)
+        #else
+        Color.primary
+        #endif
+    }
 
     static var assistantText: Color {
         #if os(macOS)

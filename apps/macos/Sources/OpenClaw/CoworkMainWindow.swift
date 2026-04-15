@@ -686,7 +686,6 @@ struct CoworkTaskDetailView: View {
                     viewModel: viewModel,
                     showsSessionSwitcher: false,
                     style: .standard,
-                    userAccent: CoworkPalette.userBubble,
                     showsAssistantTrace: true)
                     .id(viewModel.sessionKey)
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
