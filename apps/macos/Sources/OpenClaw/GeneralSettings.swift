@@ -17,6 +17,7 @@ struct GeneralSettings: View {
     @State private var showRemoteAdvanced = false
     @State private var languageStore = LanguagePreferenceStore.shared
     @State private var showLanguageRestartHint = false
+    @State private var themeStore = ThemePreferenceStore.shared
     private let isPreview = ProcessInfo.processInfo.isPreview
     private var isNixMode: Bool {
         ProcessInfo.processInfo.isNixMode
@@ -77,6 +78,10 @@ struct GeneralSettings: View {
                     Divider()
 
                     self.languageSection
+
+                    Divider()
+
+                    self.themeSection
                 }
 
                 Spacer(minLength: 12)
@@ -146,6 +151,32 @@ struct GeneralSettings: View {
                 self.languageStore.preference = newValue
                 self.showLanguageRestartHint = true
             })
+    }
+
+    private var themeSection: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Text("外观")
+                .font(.title3.weight(.semibold))
+                .frame(maxWidth: .infinity, alignment: .leading)
+
+            Picker("外观", selection: self.themeBinding) {
+                ForEach(ThemePreference.allCases) { option in
+                    Text(option.displayName).tag(option)
+                }
+            }
+            .pickerStyle(.segmented)
+            .frame(maxWidth: 340, alignment: .leading)
+
+            Text("快捷键 ⌘⇧L 可在任意窗口循环切换。")
+                .font(.footnote)
+                .foregroundStyle(.secondary)
+        }
+    }
+
+    private var themeBinding: Binding<ThemePreference> {
+        Binding(
+            get: { self.themeStore.preference },
+            set: { newValue in self.themeStore.preference = newValue })
     }
 
     private var connectionSection: some View {

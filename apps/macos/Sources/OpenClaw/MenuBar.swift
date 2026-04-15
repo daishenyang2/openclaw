@@ -34,6 +34,7 @@ struct OpenClawApp: App {
     init() {
         OpenClawLogging.bootstrapIfNeeded()
         LanguagePreferenceStore.bootstrap()
+        ThemePreferenceStore.bootstrap()
 
         Self.applyAttachOnlyOverrideIfNeeded()
         _state = State(initialValue: AppStateStore.shared)
@@ -100,7 +101,22 @@ struct OpenClawApp: App {
         .defaultSize(width: 1200, height: 800)
         .windowResizability(.contentSize)
         .commands {
-            CommandGroup(replacing: .newItem) { }
+            CommandGroup(replacing: .newItem) {
+                Button("新任务") {
+                    NotificationCenter.default.post(name: .coworkNewTaskRequested, object: nil)
+                }
+                .keyboardShortcut("n", modifiers: .command)
+            }
+            CommandGroup(after: .toolbar) {
+                Button("聚焦搜索") {
+                    NotificationCenter.default.post(name: .coworkFocusSearchRequested, object: nil)
+                }
+                .keyboardShortcut("k", modifiers: .command)
+                Button("切换外观") {
+                    NotificationCenter.default.post(name: .coworkCycleThemeRequested, object: nil)
+                }
+                .keyboardShortcut("l", modifiers: [.command, .shift])
+            }
         }
     }
 

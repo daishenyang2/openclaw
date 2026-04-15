@@ -48,3 +48,5 @@ let debugFileLogEnabledKey = "openclaw.debug.fileLogEnabled"
 let appLogLevelKey = "openclaw.debug.appLogLevel"
 let voiceWakeSupported: Bool = ProcessInfo.processInfo.operatingSystemVersion.majorVersion >= 26
 let languagePreferenceKey = "openclaw.languagePreference"
+let coworkNotesKeyPrefix = "openclaw.cowork.notes."
+let coworkArchivedKeysKey = "openclaw.cowork.archivedSessionKeys"
